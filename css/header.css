@@ -1,3 +1,12 @@
+/* ======= */
+/* FUENTES */
+/* ======= */
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ======== */
+/* RESETING */
+/* ======== */
+
 body {
     margin: 0;
     padding: 0;
@@ -7,12 +16,63 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+/* ====== */
+/* HEADER */
+/* ====== */
+
 .header {
     height: 100px;
-    background-color: #aaa;
+    background-color: #4f4f4f;
+    font-family: "Exo", sans-serif;
+    display: block;
+}
+
+.menu * {
+    display: inline-block;
+    margin: auto;
+}
+
+.logo img {
+    height: 40px;
+    border-radius: 100%;
+}
+
+
+/* 
+
+
+.menu {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.menu * {
+    display: inline-block;
+    margin: auto;
 }
 
 .logo {
-    width: 70px;
+    height: 80px;
     border-radius: 100%;
+    margin: 0;
 }
+
+.lista {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.lista * {
+    margin: 0 30px;
+    color: #fafaff;
+    font-weight: bold;
+    font-size: 24px;
+}
+ */
