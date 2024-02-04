@@ -3,22 +3,23 @@
   margin-bottom: 0;
 }
 
-.fondo img:last-child {
-  width: 100%;
-  opacity: 85%;
-}
+  .fondo img:last-child {
+    width: 100%;
+    opacity: 75%;
+  }
 
-.fondo h1 {
-  position: absolute;
-  font-size: 5vw;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-  width: 100%;
-  color: #107c10;
-  -webkit-text-stroke: 3px black;
-  z-index: 1;
-  text-align: center;
-}
+  .fondo h1 {
+    position: absolute;
+    font-size: 5vw;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    width: 100%;
+    color: #107c10;
+    -webkit-text-stroke: 3px black;
+    z-index: 1;
+    text-align: center;
+    margin-top: 12%;
+  }
 
 .consolas {
   position: fixed;
@@ -29,29 +30,29 @@
   margin-inline: auto;
 }
 
-.consolas img {
-  width: 100%;
-  max-width: 70%;
-  margin-left: 33%; 
-}
+  .consolas img {
+    width: 100%;
+    max-width: 70%;
+    margin-left: 33%; 
+  }
 
-.consolas img:hover {
-  max-width: 60%;
-  margin-bottom: 5.5%;
-}
+  .consolas img:hover {
+    max-width: 60%;
+    margin-bottom: 5.5%;
+  }
 
-.consolas h2 {
-  text-align: center;
-  font-size: 2vw;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 0;
-  margin-left: 30%;
-}
+  .consolas h2 {
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0;
+    margin-left: 30%;
+  }
 
-.consola1 {
-  margin-right: 5%;
-}
+  .consola1 {
+    margin-right: 5%;
+  }
 
-.consola2 {
-  margin-left: 5%; 
-}
+  .consola2 {
+    margin-left: 5%; 
+  }
