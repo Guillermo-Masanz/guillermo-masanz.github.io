@@ -18,7 +18,7 @@
     -webkit-text-stroke: 3px black;
     z-index: 1;
     text-align: center;
-    margin-top: 12%;
+    margin-top: 10%;
   }
 
 .consolas {
@@ -39,6 +39,7 @@
   .consolas img:hover {
     max-width: 60%;
     margin-bottom: 5.5%;
+    transition: max-width 0.4s, margin-bottom 0.4s;
   }
 
   .consolas h2 {
