@@ -83,3 +83,20 @@ a {
     color: #dd2020;
     transition: color .2 ease-in-out;
 }
+
+.enlace:nth-child(1)::after,
+.enlace:nth-child(5)::after,
+.enlace:nth-child(6)::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #353535;
+    transition: width 300ms;
+}
+
+.enlace:nth-child(1):hover::after,
+.enlace:nth-child(5):hover::after,
+.enlace:nth-child(6):hover::after {
+    width: 100%;
+}
