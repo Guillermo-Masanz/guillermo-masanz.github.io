@@ -68,3 +68,15 @@ a {
 .enlace:hover {
     cursor: pointer;
 }
+
+.lista .enlace:nth-child(2) a:hover {
+    color: #0070d1;
+}
+
+.lista .enlace:nth-child(3) a:hover {
+    color: #107B10;
+}
+
+.lista .enlace:nth-child(4) a:hover {
+    color: #E60012;
+}
