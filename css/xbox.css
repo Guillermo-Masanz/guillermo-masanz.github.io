@@ -34,6 +34,7 @@
     width: 100%;
     max-width: 70%;
     margin-left: 33%; 
+    transition: max-width 0.4s, margin-bottom 0.4s;
   }
 
   .consolas img:hover {
