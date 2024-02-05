@@ -27,7 +27,7 @@ a {
 
 .header {
     height: 100px;
-    background-color: #4f4f4f;
+    background-color: #E8EBF7;
     display: block;
     position: sticky;
     top: 0%;
@@ -54,7 +54,7 @@ a {
 }
 
 .enlace *{
-    color: #fafaff;
+    color: #353535;
     font-size: 24px;
     font-weight: bold;
     margin: 4px;
@@ -62,21 +62,24 @@ a {
 
 .enlace:hover i {
     transform: rotate(180deg);
-    transition: transform .5s ease-in-out;
+    transition: transform .3s ease-in-out;
 }
 
 .enlace:hover {
     cursor: pointer;
 }
 
-.lista .enlace:nth-child(2) a:hover {
-    color: #0070d1;
+ .enlace:nth-child(2):hover *{
+    color: #00439C;
+    transition: color .2 ease-in-out;
 }
 
-.lista .enlace:nth-child(3) a:hover {
-    color: #107B10;
+.enlace:nth-child(3):hover *{
+    color: #2ca243;
+    transition: color .2 ease-in-out;
 }
 
-.lista .enlace:nth-child(4) a:hover {
-    color: #E60012;
+.enlace:nth-child(4):hover *{
+    color: #dd2020;
+    transition: color .2 ease-in-out;
 }
