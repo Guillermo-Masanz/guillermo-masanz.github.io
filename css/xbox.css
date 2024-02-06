@@ -5,7 +5,6 @@
 
   .fondo img:last-child {
     width: 100%;
-    opacity: 75%;
   }
 
   .fondo h1 {
@@ -29,6 +28,7 @@
   width: 90%;
   margin-inline: auto;
 }
+
 
   .consolas img {
     width: 100%;
