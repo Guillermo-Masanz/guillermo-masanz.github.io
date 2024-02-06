@@ -1,60 +1,102 @@
 .fondo {
-  position: relative;
-  margin-bottom: 0;
+    position: relative;
+    margin-bottom: 0;
 }
 
-  .fondo img:last-child {
-    width: 100%;
-  }
+    .fondo img:last-child {
+        width: 100%;
+    }
 
-  .fondo h1 {
+    .fondo h1 {
+        position: absolute;
+        font-size: 5vw;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        width: 100%;
+        color: #107c10;
+        -webkit-text-stroke: 3px black;
+        z-index: 1;
+        text-align: center;
+        margin-top: 9%;
+    }
+
+.oscuro{
     position: absolute;
-    font-size: 5vw;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    width: 100%;
-    color: #107c10;
-    -webkit-text-stroke: 3px black;
+    background-color: black;
     z-index: 1;
-    text-align: center;
-    margin-top: 10%;
-  }
+    width: 100%;
+    height: 82.1%;
+    opacity: 30%;
+}
 
 .consolas {
-  position: fixed;
-  display: flex;
-  margin-top: 19%;
-  z-index: 1;
-  width: 90%;
-  margin-inline: auto;
+    position: absolute;
+    display: flex;
+    top: 44.5%;
+    z-index: 1;
+    width: 90%;
+    margin-inline: auto;
 }
 
+    .consolas img {
+        width: 100%;
+        max-width: 70%;
+        margin-left: 33%; 
+        transition: max-width 0.4s, margin-bottom 0.4s;
+    }
 
-  .consolas img {
-    width: 100%;
-    max-width: 70%;
-    margin-left: 33%; 
-    transition: max-width 0.4s, margin-bottom 0.4s;
-  }
+    .consolas img:hover {
+        max-width: 60%;
+        margin-bottom: 5.5%;
+        transition: max-width 0.4s, margin-bottom 0.4s;
+    }
 
-  .consolas img:hover {
-    max-width: 60%;
-    margin-bottom: 5.5%;
-    transition: max-width 0.4s, margin-bottom 0.4s;
-  }
+    .consolas h2 {
+        text-align: center;
+        font-size: 2vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 0;
+        margin-left: 30%;
+    }
 
-  .consolas h2 {
+    .consola1 {
+        margin-right: 5%;
+    }
+
+    .consola2 {
+        margin-left: 5%; 
+    }
+
+
+h1{ 
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     text-align: center;
-    font-size: 2vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 0;
-    margin-left: 30%;
-  }
+    font-size: 4vw;
+}
 
-  .consola1 {
-    margin-right: 5%;
-  }
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-inline: 2%;
+    margin-top: 5%;
+}
 
-  .consola2 {
-    margin-left: 5%; 
-  }
+.categoria{
+    margin-inline: 4%;
+    border: 2px solid #107c10;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.categoria img{
+    width: 100%;
+}
+
+.categoria h3{
+    text-align: center;
+    color: #107c10;
+    margin: 0;
+}
+
+.categoria:hover {
+    transform: translateY(-10px);
+}
