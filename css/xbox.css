@@ -1,7 +1,7 @@
 .fondo {
     position: relative;
     margin-bottom: 0;
-    z-index: -1;
+    z-index: 0;
 }
 
 .fondo img:last-child {
@@ -100,3 +100,6 @@ h1 {
 .categoria:hover {
     transform: translateY(-10px);
 }
+
+
+/* CARROUSEL */
