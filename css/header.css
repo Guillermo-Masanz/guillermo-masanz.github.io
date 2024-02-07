@@ -3,9 +3,9 @@
 /* ======= */
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* ======== */
-/* RESETING */
-/* ======== */
+/* ! ======== ! */
+/* ! RESETING ! */
+/* ! ======== ! */
 
 body {
     margin: 0;
@@ -21,9 +21,9 @@ a {
     text-decoration: none;
 }
 
-/* ====== */
-/* HEADER */
-/* ====== */
+/* ! ====== ! */
+/* ! HEADER ! */
+/* ! ====== ! */
 
 .header {
     height: 100px;
@@ -116,7 +116,7 @@ a {
     background-color: #e8ebf7;
     min-width: 160px;
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    z-index: 3;
     margin-top: 2px;
     border-radius: 12px;
 }
@@ -146,5 +146,5 @@ a {
 
 .desplegable:hover .dropdown_content {
     display: block;
-    z-index: 1;
+    z-index: 2;
 }
