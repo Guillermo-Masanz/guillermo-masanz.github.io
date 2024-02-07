@@ -146,4 +146,5 @@ a {
 
 .desplegable:hover .dropdown_content {
     display: block;
+    z-index: 1;
 }
