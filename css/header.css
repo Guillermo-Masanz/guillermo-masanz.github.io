@@ -13,10 +13,13 @@ body {
     padding: 0;
 }
 
+.header {
+    z-index: 3;
+}
+
 .header a {
     box-sizing: border-box;
     font-family: "Exo", sans-serif;
-    z-index: 3;
 }
 
 a {
