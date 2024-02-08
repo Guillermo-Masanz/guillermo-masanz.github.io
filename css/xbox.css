@@ -1,3 +1,6 @@
+/* ! ======= ! */
+/* ! PORTADA ! */
+/* ! ======= ! */
 .fondo {
     position: relative;
     margin-bottom: 0;
@@ -67,7 +70,15 @@
     margin-left: 5%;
 }
 
-/* CARROUSEL */
+/* ! ========= ! */
+/* ! CARROUSEL ! */
+/* ! ========= ! */
+
+
+
+/* ! ======== ! */
+/* ! TARJETAS ! */
+/* ! ======== ! */
 
 h1 {
     font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
