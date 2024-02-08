@@ -6,7 +6,7 @@
         <link rel="icon" type="image/x-icon" href="/images/images_Xbox/Xbox_one_logo.svg.png">
         <link rel='stylesheet' type='text/css' media='screen' href='/css/xbox.css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="../../js/xbox.js" defer></script>
+        <script src="https://kit.fontawesome.com/de21f4bddc.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="header"></div>
@@ -41,14 +41,47 @@
             <!-- ! ========= ! -->
             <!-- ! CARROUSEL ! -->
             <!-- ! ========= ! -->
-            <div class="carrousel_container">
-                <img src="../../Images/images_Xbox/RDR2.jpg" alt="Red Dead Redemption 2">
-                <img src="../../Images/images_Xbox/Elden-Ring.jpg" alt="Elden Ring">
-                <img src="../../Images/images_Xbox/Forza-Horizon-5.jpg" alt="Forza Horizon 5">
-                <img src="../../Images/images_Xbox/gta v.jpg" alt="GTA 5">
-                <span class="carousel-prev">&#10094;</span>
-                <span class="carousel-next">&#10095;</span>
+
+            <div class="carousel"> 
+                <div class="carousel-item"> 
+                    <div class="slide-image">
+                        <img src="../../images/images_Xbox/Elden-Ring.jpg" alt="Elden Ring">
+                    </div>
+                </div>
+                <div class="carousel-item"> 
+                    <div class="slide-image">
+                        <img src="../../images/images_Xbox/gta v.jpg" alt="GTA 5">
+                    </div>
+                </div>
+                <div class="carousel-item"> 
+                    <div class="slide-image">
+                        <img src="../../images/images_Xbox/RDR2.jpg" alt="Red Dead Redemption 2">
+                    </div>
+                </div>
+                <div class="carousel-item"> 
+                    <div class="slide-image">
+                        <img src="../../images/images_Xbox/Forza-Horizon-5.jpg" alt="Forza Horizon 5">
+                    </div>
+                </div>
+                <div class="backward controles">
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <div class="forward controles">
+                    <i class="fa-solid fa-forward"></i>
+                </div>
             </div>
+
+<!-- 
+            <div class="slider_container">
+                <div class="slider" id="slider">
+                    <img class="slide" src="../../images/images_Xbox/Elden-Ring.jpg" alt="Elden Ring">
+                    <img class="slide" src="../../images/images_Xbox/Forza-Horizon-5.jpg" alt="Forza Horizon 5">
+                    <img class="slide" src="../../images/images_Xbox/RDR2.jpg" alt="Red Dead Redemption 2">
+                    <img class="slide" src="../../images/images_Xbox/gta v.jpg" alt="GTA 5">
+                    <i class="fa-solid fa-backward controles"></i>
+                    <i class="fa-solid fa-forward controles"></i>
+                </div>
+            </div> -->
 
             <!-- ! ======== ! -->
             <!-- ! TARJETAS ! -->
@@ -82,5 +115,6 @@
             </div>
 
         </div>
+        <script src="../../js/xbox.js"></script>
     </body>
 </html>
