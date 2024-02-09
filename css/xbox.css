@@ -105,23 +105,10 @@ a {
     z-index: 1;
 }
 
-.carousel-item {
-    width: 100%;
-    left: 100%;
-}
-
 .slide-image img {
     max-width: 100%;
-    height: auto;
-}
-
-.carousel-item.active {
-    left: 0;
-    transition: all 0.3s ease-out;
-}
-
-.carousel-item div {
     height: 100%;
+    position: relative;
 }
 
 .controles {
@@ -141,6 +128,7 @@ a {
 .forward {
     right: 0%;
 }
+
 
 /* ! ======== ! */
 /* ! TARJETAS ! */
