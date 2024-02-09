@@ -1,3 +1,28 @@
+/* ! ======== ! */
+/* ! RESETING ! */
+/* ! ======== ! */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.cuerpo * {
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ! ======= ! */
+/* ! PORTADA ! */
+/* ! ======= ! */
 .fondo {
     position: relative;
     margin-bottom: 0;
@@ -67,6 +92,60 @@
     margin-left: 5%;
 }
 
+/* ! ========= ! */
+/* ! CARROUSEL ! */
+/* ! ========= ! */
+.carousel {
+    position: relative;
+    width: 90%;
+    margin: 12px auto;
+    height: 700px;
+    overflow: hidden;
+    border-radius: 12px;
+    z-index: 1;
+}
+
+.carousel-item {
+    width: 100%;
+    left: 100%;
+}
+
+.slide-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-item.active {
+    left: 0;
+    transition: all 0.3s ease-out;
+}
+
+.carousel-item div {
+    height: 100%;
+}
+
+.controles {
+    position: absolute;
+    top: calc((100% - 60px) / 2);
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+    z-index: 1;
+    margin-inline: 40px;
+}
+
+.backward {
+    left: 0%;
+}
+
+.forward {
+    right: 0%;
+}
+
+/* ! ======== ! */
+/* ! TARJETAS ! */
+/* ! ======== ! */
+
 h1 {
     font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
     text-align: center;
@@ -76,17 +155,18 @@ h1 {
 .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2%;
-    margin-inline: 2%;
+    grid-gap: 2%; 
+    margin-inline: 2%; 
+    padding-bottom: 120px;
 }
 
-.categoria {
-    margin: 0;
-    border: 2px solid #107c10;
-    border-radius: 10%;
-    overflow: hidden;
-    transition: transform 0.3s;
-    background-color: #107c10;
+.categoria { 
+    margin: 0; 
+    border: 2px solid #2ca243; 
+    border-radius: 10%; 
+    overflow: hidden; 
+    transition: transform 0.3s; 
+    background-color: #2ca243;
 }
 
 .categoria img {
