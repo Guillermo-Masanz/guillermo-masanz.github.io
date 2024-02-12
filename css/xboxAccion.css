@@ -1,0 +1,39 @@
+body{
+    background-color: #1A1B1E;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.galeria {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-inline: 5%;
+}
+
+.galeria li {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.galeria img {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 3%;
+}
+
+.galeria p {
+    margin: 0;
+    font-size: 1.3vw;
+    color: white;
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+.galeria li:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
