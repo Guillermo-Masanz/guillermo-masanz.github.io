@@ -130,25 +130,6 @@ a {
     right: 0%;
 }
 
-/* .carousel {
-    overflow: hidden;
-    width: calc((100% - 40px) / 20%);
-    margin: 12px;
-    margin: auto;
-    position: relative;
-}
-
-.carousel_content {
-    flex-flow: row nowrap;
-    display: flex;
-    transition: all 600ms ease-in-out;
-    position: relative;
-}
-
-.carousel_img {
-    width: 100%;
-} */
-
 /* ! ======== ! */
 /* ! TARJETAS ! */
 /* ! ======== ! */
