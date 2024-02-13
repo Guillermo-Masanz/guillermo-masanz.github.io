@@ -1,4 +1,49 @@
-* {
+/* ! ======== ! */
+/* ! RESETING ! */
+/* ! ======== ! */
+
+body * {
     margin: 0;
     padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.cuerpo * {
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: none;
+    border: none;
+}
+
+/* ! ====== ! */
+
+/* ! ====== ! */
+
+.selector_consolas {
+    margin: 40px;
+}
+
+.selector_consolas ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 60px;
+}
+
+button{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
 }
