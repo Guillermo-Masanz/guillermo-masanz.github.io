@@ -6,7 +6,8 @@
         <link rel='stylesheet' type='text/css' media='screen' href="css/main.css">
         <link rel="icon" type="image/x-icon" href="images/Logo.jpg">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="/js/header.js"></script>
+        <script src="js/main.js" defer></script>
+        <script src="js/header.js"></script>
     </head>
     <body>
         <!-- ! ====== ! -->
@@ -14,35 +15,47 @@
         <!-- ! ====== ! -->
         <div class="header"></div>
 
-        <div class="selector_consolas">
-            <ul>
-                <li>
-                    <button class="xbox_button" type="button">Xbox</button>
-                </li>
-                <li>
-                    <button class="ps_button" type="button">PlayStation</button>
-                </li>
-                <li>
-                    <button class="nintendo_button" type="button">Nintendo</button>
-                </li>
-            </ul>
+        <div class="cuerpo">
+
+            <div class="consolas">
+                
+                <div class="selector_consolas">
+                    <ul>
+                        <li>
+                            <p class="xbox_button boton">Xbox</p>
+                        </li>
+                        <li>
+                            <p class="ps_button boton">PlayStation</p>
+                        </li>
+                        <li>
+                            <p class="nintendo_button boton">Nintendo</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="consola active" id="xbox">
+                    <video src="videos/SeriesX_Trailer.mp4" autoplay muted loop></video>
+                    <div class="goto">
+                        <a href="html/Xbox/xbox.html">Ir a XBOX</a>
+                    </div>
+                </div>
+
+                <div class="consola" id="ps">
+                    <video src="videos/PS5_Trailer.mp4" autoplay muted loop></video>
+                    <div class="goto">
+                        <a href="html/PS/ps-principal.html">Ir a PlayStation</a>
+                    </div>
+                </div>
+
+                <div class="consola" id="nintendo">
+                    <video src="videos/Nintendo-Switch_Trailer.mp4" autoplay muted loop></video>
+                    <div class="goto">
+                        <a href="html/Nintendo/nintendo.html">Ir a Nintendo</a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-
-        <div class="consolas">
-            <div class="xbox">
-
-            </div>
-
-            <div class="ps">
-
-            </div>
-
-            <div class="nintendo">
-
-            </div>
-        </div>
-        
-
-
     </body>
 </html>

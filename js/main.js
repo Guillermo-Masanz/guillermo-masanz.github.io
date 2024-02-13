@@ -1,0 +1,52 @@
+var boton_xbox = document.querySelector('.xbox_button');
+var boton_ps = document.querySelector('.ps_button');
+var boton_nintendo = document.querySelector('.nintendo_button');
+
+var xbox = document.querySelector('#xbox');
+var ps = document.querySelector('#ps');
+var nintendo = document.querySelector('#nintendo');
+
+var videos = document.querySelectorAll('video');
+
+boton_xbox.addEventListener('click', function() {
+    if (xbox.classList.contains('active')) {
+        return true;
+    } else {
+        switchVideo(xbox);
+    };
+});
+
+boton_ps.addEventListener('click', function() {
+    if (ps.classList.contains('active')) {
+        return true;
+    } else {
+        switchVideo(ps);
+    };
+});
+
+boton_nintendo.addEventListener('click', function() {
+    if (nintendo.classList.contains('active')) {
+        return true;
+    } else {
+        switchVideo(nintendo);
+    };
+});
+
+function switchVideo(newActive) {
+    var oldActive = document.querySelector('.active');
+    oldActive.classList.remove('active');
+    newActive.classList.add('active');
+    
+    var newVideo = newActive.querySelector('video');
+    var oldVideo = oldActive.querySelector('video');
+
+    if (oldVideo) {
+        oldVideo.pause();
+        oldVideo.currentTime = 0;
+    };
+    
+    if (newVideo) {
+        newVideo.currentTime = 0;
+        newVideo.play();
+    };
+}
