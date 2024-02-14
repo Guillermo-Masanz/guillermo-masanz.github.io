@@ -8,7 +8,7 @@ var nintendo = document.querySelector('#nintendo');
 
 var videos = document.querySelectorAll('video');
 
-boton_xbox.addEventListener('click', function() {
+boton_xbox.addEventListener('click', () => {
     if (xbox.classList.contains('active')) {
         return true;
     } else {
@@ -16,7 +16,7 @@ boton_xbox.addEventListener('click', function() {
     };
 });
 
-boton_ps.addEventListener('click', function() {
+boton_ps.addEventListener('click', () => {
     if (ps.classList.contains('active')) {
         return true;
     } else {
@@ -24,7 +24,7 @@ boton_ps.addEventListener('click', function() {
     };
 });
 
-boton_nintendo.addEventListener('click', function() {
+boton_nintendo.addEventListener('click', () => {
     if (nintendo.classList.contains('active')) {
         return true;
     } else {
