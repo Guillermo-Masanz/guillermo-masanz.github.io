@@ -242,6 +242,7 @@ h1:nth-child(5) {
     background-color: white;
     padding: 15px;
     text-align: justify;
+    font-size: 1vw;
 }
 
 .accesorio:hover .front {
