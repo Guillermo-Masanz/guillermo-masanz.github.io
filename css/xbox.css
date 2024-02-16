@@ -200,50 +200,54 @@ h1:nth-child(5) {
 }
 
 .accesorios {
+    background-color: #bbbbbb;
     display: flex;
     justify-content: center;
-    background-color: #bbbbbb;
+    padding-bottom: 4%;
 }
 
 .accesorio {
     position: relative;
-    width: 100%;
-    height: 30vw;
-    margin-inline: 3%;
-    margin-bottom: 3%;
+    display: inline-block;
+    width: 20vw;
+    height: 25vw;
+    margin-inline: 5%;
 }
 
-.front,
-.back {
-    width: 100%;
-    height: 100%;
+.accesorio .front {
     position: absolute;
-    transition: transform 0.8s;
-    backface-visibility: hidden;
-}
-
-.front img {
     width: 100%;
     height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 0 5px 10px #000;
 }
 
-.back {
-    transform: rotateY(180deg);
-    background-color: #f1f1f1;
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    padding: 20px;
-    width: 70%;
+.accesorio .front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.accesorio .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
     border-radius: 10px;
-    font-size: 1.15vw;
+    overflow: hidden;
+    transition: 0.5s;
+    transform: perspective(1000px) rotateY(180deg);
+    background-color: white;
+    padding: 15px;
+    text-align: justify;
 }
 
 .accesorio:hover .front {
-    transform: rotateY(-180deg);
+    transform: perspective(1000px) rotateY(-180deg);
 }
 
 .accesorio:hover .back {
-    transform: rotateY(0deg);
-    margin-left: 18%;
+    transform: perspective(1000px) rotateY(0deg);
 }
