@@ -79,12 +79,14 @@ a {
     cursor: pointer;
 }
 
-.desplegable:nth-of-type(2):hover > a, .desplegable:nth-of-type(2):hover i:first-of-type {
+.desplegable:nth-of-type(2):hover > a,
+.desplegable:nth-of-type(2):hover i:first-of-type {
     color: #2ca243;
     transition: color 0.2 ease-in-out;
 }
 
-.desplegable:nth-of-type(3):hover > a, .desplegable:nth-of-type(3):hover i:first-of-type {
+.desplegable:nth-of-type(3):hover > a,
+.desplegable:nth-of-type(3):hover i:first-of-type {
     color: #dd2020;
     transition: color 0.2 ease-in-out;
 }
