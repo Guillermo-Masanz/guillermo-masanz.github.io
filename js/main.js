@@ -1,5 +1,4 @@
 var boton_xbox = document.querySelector('.xbox_button');
-var boton_ps = document.querySelector('.ps_button');
 var boton_nintendo = document.querySelector('.nintendo_button');
 
 var xbox = document.querySelector('#xbox');
@@ -13,14 +12,6 @@ boton_xbox.addEventListener('click', () => {
         return true;
     } else {
         switchVideo(xbox);
-    };
-});
-
-boton_ps.addEventListener('click', () => {
-    if (ps.classList.contains('active')) {
-        return true;
-    } else {
-        switchVideo(ps);
     };
 });
 

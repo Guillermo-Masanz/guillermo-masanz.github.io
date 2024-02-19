@@ -1,7 +1,7 @@
-/* ======== */
-/* IMPORTES */
-/* ======== */
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+/* ! ======== ! */
+/* ! IMPORTES ! */
+/* ! ======== ! */
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* ! ======== ! */
 /* ! RESETING ! */
@@ -13,7 +13,7 @@ body * {
 
 * {
     box-sizing: border-box;
-    font-family: 'Exo', sans-serif;
+    font-family: "Exo", sans-serif;
 }
 
 .cuerpo * {
@@ -28,7 +28,6 @@ button {
     background-color: none;
     border: none;
 }
-
 /* ! ======== ! */
 /* ! SELECTOR ! */
 /* ! ======== ! */
@@ -67,24 +66,12 @@ button {
     font-weight: bold;
 }
 
-li:nth-of-type(1) p:hover {
-    color: #2ca243df;
-}
-
-li:nth-of-type(2) p:hover {
-    color: #00439cdf;
-}
-
-li:nth-of-type(3) p:hover {
-    color: #dd2020df;
-}
-
 .selector_consolas p:hover {
     cursor: pointer;
 }
 
 .selector_consolas li p::after {
-    content: '';
+    content: "";
     display: block;
     width: 0;
     height: 2px;
@@ -105,6 +92,7 @@ li:nth-of-type(3) p:hover {
     opacity: 0;
     display: none;
     position: relative;
+    height: 100vh;
 }
 
 .active {
@@ -123,58 +111,33 @@ li:nth-of-type(3) p:hover {
 /* ! IR A ! */
 /* ! ==== ! */
 
-#xbox .goto {
+.goto {
     position: absolute;
-    bottom: 15%;
-    left: calc(50% - 150px);
-    font-size: 40px;
+    bottom: 1em;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    font-size: 2.4em;
+    border-radius: 14px;
+    text-align: center;
     font-weight: bold;
-    background-color: #2ca24300;
-    transition: background-color 200ms ease-in;
-    padding: 40px;
-    border-radius: 20px;
+    padding: 1em;
+    transition-property: background-color, border;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
 }
 
 #xbox .goto:hover {
-    background-color: #2ca243;
-}
-
-#ps .goto {
-    position: absolute;
-    bottom: 15%;
-    left: calc(50% - 210px);
-    font-size: 40px;
-    font-weight: bold;
-    background-color: #00439c00;
-    transition: background-color 200ms ease-in;
-    padding: 40px;
-    border-radius: 20px;
-}
-
-#ps .goto:hover {
-    background-color: #00439c;
-}
-
-#nintendo .goto {
-    position: absolute;
-    bottom: 15%;
-    left: calc(50% - 190px);
-    font-size: 40px;
-    font-weight: bold;
-    background-color: #dd202000;
-    transition: background-color 200ms ease-in;
-    padding: 40px;
-    border-radius: 20px;
+    background-color: #134d13;
+    border: 1px solid #134d13;
+    cursor: pointer;
 }
 
 #nintendo .goto:hover {
     background-color: #dd2020;
-}
-
-.goto:hover {
-    border: 1px solid #353535;
+    border: 1px solid #dd2020;
     cursor: pointer;
 }
+
 
 .goto a {
     color: white;
