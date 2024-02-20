@@ -7,6 +7,26 @@ body{
     background-color: lightgray;
 }
 
-.form {
-    
+.cuerpo {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin-top: 10%;
+    background-color: white;
+    width: 40vw;
+    height: 30vw;
+}
+
+form h1 {
+    text-align: left;
+    margin-top: 7%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+label, input, textarea {
+    margin-inline: 5%;
+    margin-block: 2%;
 }
