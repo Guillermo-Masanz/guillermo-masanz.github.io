@@ -2,3 +2,70 @@
 /* ! FUENTES Y RESET ! */
 /* ! =============== ! */
 @import url('generic.css');
+
+body{
+    background-color: lightgray;
+}
+
+form {
+    width: 38%;
+    margin: auto;
+    margin-top: 6%;
+    padding: 4%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 4%;
+}
+
+.campo {
+    margin-bottom: 3%;
+}
+
+label {
+    display: block;
+    margin-bottom: 2%;
+}
+
+input{
+    width: 50%;
+    padding: 1%;
+    border: none;
+    border-bottom: solid;
+}
+
+input#email{
+    width: 100%;
+    padding: 1%;
+    border: none;
+    border-bottom: solid;
+}
+
+textarea {
+    width: 100%;
+    padding: 3%;
+    border: none;
+    border-bottom: solid;
+}
+
+button {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    padding-inline: 8%;
+    padding-block: 2.5%;
+    border: 1px solid #ccc;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: green;
+    transform: scale(1.1); /* Aumentamos el tamaño del botón en un 10% */
+}
