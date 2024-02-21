@@ -11,7 +11,7 @@ boton_xbox.addEventListener('click', () => {
     if (xbox.classList.contains('active')) {
         return true;
     } else {
-        switchVideo(xbox);
+        cambiarVideo(xbox);
     };
 });
 
@@ -19,11 +19,11 @@ boton_nintendo.addEventListener('click', () => {
     if (nintendo.classList.contains('active')) {
         return true;
     } else {
-        switchVideo(nintendo);
+        cambiarVideo(nintendo);
     };
 });
 
-function switchVideo(newActive) {
+function cambiarVideo(newActive) {
     var oldActive = document.querySelector('.active');
     oldActive.classList.remove('active');
     newActive.classList.add('active');

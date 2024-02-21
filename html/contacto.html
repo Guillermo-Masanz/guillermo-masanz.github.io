@@ -10,25 +10,35 @@
     <script src="/js/header.js"></script>
 </head>
 <body>
+    <!-- ! ====== ! -->
+    <!-- ! HEADER ! -->
+    <!-- ! ====== ! -->
     <div class="header"></div>
 
+    <!-- ! ====== ! -->
+    <!-- ! CUERPO ! -->
+    <!-- ! ====== ! -->
     <div class="cuerpo">
+
+        <!-- ! ========== ! -->
+        <!-- ! FORMULARIO ! -->
+        <!-- ! ========== ! -->
         <form action="contacto.html" method="post">
             <h1>Contáctanos</h1>
             <div class="campo">
-                <label for="nombre">Nombre</label>
+                <label for="nombre">Nombre <span>*</span></label>
                 <input type="text" id="nombre" name="nombre" required>
             </div>
             <div class="campo">
                 <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" required>
+                <input type="text" id="apellido" name="apellido">
             </div>
             <div class="campo">
-                <label for="email">Email*</label>
+                <label for="email">Email <span>*</span></label>
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="campo">
-                <label for="mensaje">Mensaje</label>
+                <label for="mensaje">Mensaje <span>*</span></label>
                 <textarea id="mensaje" name="mensaje" required></textarea>
             </div>
             <button type="submit">Enviar</button>
