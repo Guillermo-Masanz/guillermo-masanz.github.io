@@ -30,7 +30,7 @@
     position: absolute;
     display: flex;
     flex-flow: row nowrap;
-    gap: 200px;
+    gap: 1vw;
     top: 6%;
     left: 50%;
     transform: translateX(-50%);
@@ -50,7 +50,7 @@
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    gap: 20px;
+    gap: 4vh;
 }
 
 /* ! ======== ! */
@@ -58,8 +58,8 @@
 /* ! ======== ! */
 
 .card {
-    width: 300px;
-    height: 300px;
+    width: 460px;
+    height: 250px;
     background-color: #fafafa;
     position: relative;
     border-radius: 12px;
@@ -67,6 +67,7 @@
     padding: 0;
     opacity: 0;
     transition: opacity 400ms ease;
+    z-index: 4;
 }
 
 .fa-caret-down {
@@ -75,12 +76,104 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 35px;
-    bottom: -6%;
+    bottom: -2.5vh;
+    z-index: -1;
 }
 
-.columna_container img:hover {
+.columna_container > img:hover {
     box-shadow: 0px 0px 100px #ffd166;
     cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+    z-index: 4;
+}
+
+.card a {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2vh;
+    font-weight: bold;
+}
+
+/* ! ====== ! */
+/* ! ACCION ! */
+/* ! ====== ! */
+.columna_container:nth-of-type(1) > .card {
+    background-color: #07090c;
+}
+
+.columna_container:nth-of-type(1) > .card > i {
+    color: #e5ae32;
+}
+
+.columna_container:nth-of-type(1) > .card > a {
+    color: #110806;
+}
+
+.columna_container:nth-of-type(1) > .card a::after {
+    content: '';
+    background-color: #110806;
+    width: 72%;
+    height: 2px;
+    display: block;
+}
+
+/* ! ========= ! */
+/* ! AVENTURAS ! */
+/* ! ========= ! */
+.columna_container:nth-of-type(2) > .card {
+    background-color: #07090c;
+}
+
+.columna_container:nth-of-type(2) > .card > i {
+    color: #2ca7a6;
+}
+
+.columna_container:nth-of-type(2) > .card > a {
+    color: #110806;
+}
+
+.columna_container:nth-of-type(2) > .card a::after {
+    content: '';
+    background-color: #110806;
+    width: 72%;
+    height: 2px;
+    display: block;
+}
+
+/* ! ======= ! */
+/* ! DEPORTE ! */
+/* ! ======= ! */
+
+/* ! === ! */
+/* ! RPG ! */
+/* ! === ! */
+.columna_container:nth-of-type(4) > .card {
+    background-color: #110806;
+}
+
+.columna_container:nth-of-type(4) > .card > i {
+    color: #110806;
+}
+
+.columna_container:nth-of-type(4) > .card > a {
+    color: #fafafa;
+}
+
+.card a::after {
+    content: '';
+    background-color: #fafafa;
+    width: 72%;
+    height: 2px;
+    display: block;
 }
 
 /* ! ============ ! */
