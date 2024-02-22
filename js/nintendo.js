@@ -17,26 +17,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event listener acción
     bloque[0].addEventListener('click', () => {
-        toggleCard(accion);
+        cambiarTarjeta(accion);
     });
 
     // Event listener aventura
     bloque[1].addEventListener('click', () => {
-        toggleCard(aventura);
+        cambiarTarjeta(aventura);
     });
 
     // Event listener deporte
     bloque[2].addEventListener('click', () => {
-        toggleCard(deporte);
+        cambiarTarjeta(deporte);
     });
 
     // Event listener RPG
     bloque[3].addEventListener('click', () => {
-        toggleCard(rpg);
+        cambiarTarjeta(rpg);
     });
 
-    // Función toggle tarjeta
-    function toggleCard(elemento) {
+    // Función cambiar tarjeta
+    function cambiarTarjeta(elemento) {
         var activo = document.querySelector('.activo');
         if (activo === elemento) {
             elemento.classList.remove("activo");
