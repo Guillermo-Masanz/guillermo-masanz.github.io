@@ -15,9 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // RPG ID
     var rpg = document.getElementById('rpg');
 
-    // Tarjetas
-    var cards = document.querySelectorAll('.card');
-
     // Event listener acción
     bloque[0].addEventListener('click', () => {
         toggleCard(accion);
