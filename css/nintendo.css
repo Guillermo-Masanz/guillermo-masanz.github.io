@@ -58,15 +58,13 @@
 /* ! ======== ! */
 
 .card {
-    width: 460px;
+    width: 444px;
     height: 250px;
-    background-color: #fafafa;
     position: relative;
     border-radius: 12px;
     margin: 0;
     padding: 0;
     opacity: 0;
-    transition: opacity 400ms ease;
     z-index: 4;
 }
 
@@ -76,8 +74,9 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 35px;
-    bottom: -2.5vh;
+    bottom: -2.2vh;
     z-index: -1;
+    color: #161616;
 }
 
 .columna_container > img:hover {
@@ -89,6 +88,7 @@
     width: 100%;
     border-radius: 12px;
     z-index: 4;
+    border: 2px solid #161616;
 }
 
 .card a {
@@ -101,71 +101,8 @@
     transform: translateX(-50%);
     bottom: 2vh;
     font-weight: bold;
-}
-
-/* ! ====== ! */
-/* ! ACCION ! */
-/* ! ====== ! */
-.columna_container:nth-of-type(1) > .card {
-    background-color: #07090c;
-}
-
-.columna_container:nth-of-type(1) > .card > i {
-    color: #e5ae32;
-}
-
-.columna_container:nth-of-type(1) > .card > a {
-    color: #110806;
-}
-
-.columna_container:nth-of-type(1) > .card a::after {
-    content: '';
-    background-color: #110806;
-    width: 72%;
-    height: 2px;
-    display: block;
-}
-
-/* ! ========= ! */
-/* ! AVENTURAS ! */
-/* ! ========= ! */
-.columna_container:nth-of-type(2) > .card {
-    background-color: #07090c;
-}
-
-.columna_container:nth-of-type(2) > .card > i {
-    color: #2ca7a6;
-}
-
-.columna_container:nth-of-type(2) > .card > a {
-    color: #110806;
-}
-
-.columna_container:nth-of-type(2) > .card a::after {
-    content: '';
-    background-color: #110806;
-    width: 72%;
-    height: 2px;
-    display: block;
-}
-
-/* ! ======= ! */
-/* ! DEPORTE ! */
-/* ! ======= ! */
-
-/* ! === ! */
-/* ! RPG ! */
-/* ! === ! */
-.columna_container:nth-of-type(4) > .card {
-    background-color: #110806;
-}
-
-.columna_container:nth-of-type(4) > .card > i {
-    color: #110806;
-}
-
-.columna_container:nth-of-type(4) > .card > a {
     color: #fafafa;
+    text-shadow: 1px 2px #161616;
 }
 
 .card a::after {
@@ -181,6 +118,7 @@
 /* ! ============ ! */
 .activo {
     opacity: 1;
+    transition: opacity 400ms ease-in-out;
 }
 
 /* ! ========== ! */
