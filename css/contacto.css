@@ -67,7 +67,7 @@ button {
 
 button:hover {
     background-color: green;
-    transform: scale(1.1); /* Aumentamos el tamaño del botón en un 10% */
+    transform: scale(1.1); 
 }
 
 .campo > :last-child:focus {
