@@ -66,6 +66,10 @@ a {
     padding: 4px;
 }
 
+.desplegable .fa-bars {
+    display: none;
+}
+
 /* ! ================== ! */
 /* ! Animaciones navbar ! */
 /* ! ================== ! */
@@ -146,22 +150,28 @@ a {
     z-index: 2;
 }
 
-/* ! ================= ! */
-/* ! BARRA DE BÚSQUEDA ! */
-/* ! ================= ! */
+/* ! ============= ! */
+/* ! TAMAÑO TABLET ! */
+/* ! ============= ! */
+@media ( 768px <= width <= 1024px) {
+    .menu img {
+        height: 4rem;
+    }
 
-.buscar {
-    padding: 8px;
-    border-radius: 16px;
-    border: 1px solid #353535;
-    margin-right: 10px;
-    font-size: 16px;
-}
+    .lista {
+        gap: 30px;
+    }
 
-.buscar:hover {
-    cursor: text;
-}
+    .lista * {
+        font-size: 1em;
+        padding: 4px;
+    }
 
-.buscar::placeholder {
-    color: #999;
+    .lista .fa-chevron-down {
+        display: none;
+    }
+
+    .lista .fa-bars {
+        display: inline-block;
+    }
 }
