@@ -228,8 +228,27 @@ h1:nth-child(5) {
     padding: 15px;
     text-align: justify;
     font-size: 1vw;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); 
+    animation: cambio-color 5s infinite linear;
 }
 
+@keyframes cambio-color {
+    0% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    }
+    25% {
+        box-shadow: 0 0 20px rgba(255, 165, 0, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+    }
+    75% {
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 0, 255, 0.8); 
+    }
+}
 .accesorio:hover .front {
     transform: perspective(1000px) rotateY(-180deg);
 }
