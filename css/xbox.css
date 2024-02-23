@@ -104,12 +104,11 @@ a {
 
 .slider {
     display: flex;
-    transition: all 1000ms ease-in-out;
+    transition: transform 1000ms ease-in-out;
     position: relative;
 }
 
 .slider img {
-    height: auto;
     max-width: 100%;
     position: relative;
 }

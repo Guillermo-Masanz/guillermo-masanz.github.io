@@ -16,7 +16,7 @@ barras.forEach(barra => {
             dropdownContent.style.display = 'block';
             dropdownAbierto = dropdownContent;
         } else {
-            dropdownAbierto = null; // Si el mismo dropdown se ha hecho clic, ciérralo
+            dropdownContent.style.display = 'none'; // Si el mismo dropdown se ha hecho clic, ciérralo
         }
     });
 });

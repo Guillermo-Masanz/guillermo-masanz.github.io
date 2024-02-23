@@ -59,6 +59,14 @@
     width: 100%;
 }
 
+.selector_consolas li:first-of-type p:hover {
+    text-shadow: 1px 2px #134d13;
+}
+
+.selector_consolas li:last-of-type p:hover {
+    text-shadow: 1px 2px #dd2020;
+}
+
 /* ! ====== ! */
 /* ! VIDEOS ! */
 /* ! ====== ! */

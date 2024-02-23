@@ -153,7 +153,7 @@ a {
 /* ! ============= ! */
 /* ! TAMAÑO TABLET ! */
 /* ! ============= ! */
-@media ( 768px <= width <= 1024px) {
+@media (768px <= width <= 1024px) {
     .menu img {
         height: 4rem;
     }
