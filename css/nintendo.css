@@ -30,7 +30,7 @@
     position: absolute;
     display: flex;
     flex-flow: row nowrap;
-    gap: 200px;
+    gap: 1vw;
     top: 6%;
     left: 50%;
     transform: translateX(-50%);
@@ -50,7 +50,7 @@
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    gap: 20px;
+    gap: 4vh;
 }
 
 /* ! ======== ! */
@@ -58,15 +58,14 @@
 /* ! ======== ! */
 
 .card {
-    width: 300px;
-    height: 300px;
-    background-color: #fafafa;
+    width: 444px;
+    height: 250px;
     position: relative;
     border-radius: 12px;
     margin: 0;
     padding: 0;
     opacity: 0;
-    transition: opacity 400ms ease;
+    z-index: 4;
 }
 
 .fa-caret-down {
@@ -75,12 +74,43 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 35px;
-    bottom: -6%;
+    bottom: -2.2vh;
+    z-index: -1;
+    color: #161616;
 }
 
-.columna_container img:hover {
+.columna_container > img:hover {
     box-shadow: 0px 0px 100px #ffd166;
     cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+    z-index: 4;
+    border: 2px solid #161616;
+}
+
+.card a {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2vh;
+    font-weight: bold;
+    color: #fafafa;
+    text-shadow: 1px 2px #161616;
+}
+
+.card a::after {
+    content: '';
+    background-color: #fafafa;
+    width: 72%;
+    height: 2px;
+    display: block;
 }
 
 /* ! ============ ! */
@@ -88,6 +118,7 @@
 /* ! ============ ! */
 .activo {
     opacity: 1;
+    transition: opacity 400ms ease-in-out;
 }
 
 /* ! ========== ! */
