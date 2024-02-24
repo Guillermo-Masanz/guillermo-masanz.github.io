@@ -11,8 +11,7 @@
 
 .cuerpo {
     min-height: calc(100vh - 6.25em);
-    background-image: url('/images/images_nintendo/main/Brick.jpeg');
-    background-size: 6rem;
+    margin-bottom: -12px;
     position: relative;
 }
 
@@ -124,33 +123,34 @@
 /* ! ========== ! */
 /* ! MARIO BROS ! */
 /* ! ========== ! */
-.mario_bros {
-    top: calc((100% + 370px) / 2);
-    height: 100px;
-    position: absolute;
-    left: 0%;
-    animation: mario 4s infinite linear;
-}
-
 @keyframes mario {
     0% {
         left: 0;
-        top: calc((100% + 370px) / 2);
+        bottom: 16%;
     }
     40% {
         left: 40%;
-        top: calc((100% + 370px) / 2);
+        bottom: 16%;
     }
     48% {
         left: 48%;
-        top: 58%;
+        bottom: 30%;
     }
     55% {
         left: 55%;
-        top: calc((100% + 370px) / 2);
+        bottom: 16%;
     }
     100% {
         left: 96%;
-        top: calc((100% + 370px) / 2);
+        bottom: 16%;
     }
+}
+
+.mario_bros {
+    bottom: 16%;
+    max-height: 6.25rem;
+    width: auto;
+    position: absolute;
+    left: 0%;
+    animation: mario 4s infinite linear;
 }

@@ -166,13 +166,4 @@ a {
         font-size: 1em;
         padding: 4px;
     }
-
-    .lista .fa-chevron-down {
-        display: none;
-    }
-
-    .lista .fa-bars {
-        display: inline-block;
-        margin-inline: 12px;
-    }
 }
