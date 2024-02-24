@@ -9,7 +9,7 @@
 
 .formulario {
     background-color: lightgray;
-    padding-block: 5%;
+    padding-block: 4%;
 }
 
 form {
@@ -93,7 +93,7 @@ form label span {
 }
 
 .accordion {
-    width: 90%;
+    width: 80%;
     margin-inline: auto;
     margin-bottom: 5%;
 }
