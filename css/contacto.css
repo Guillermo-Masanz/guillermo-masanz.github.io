@@ -3,13 +3,29 @@
 /* ! =============== ! */
 @import url('generic.css');
 
+.cuerpo {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr;
+}
+
+/* ! ===== ! */
+/* ! DATOS ! */
+/* ! ===== ! */
+
+.datos {
+    grid-column: 1 / 1;
+    background-color: lightgray;
+}
+
 /* ! ========== ! */
-/* ! Formulario ! */
+/* ! FORMULARIO ! */
 /* ! ========== ! */
 
 .formulario {
     background-color: lightgray;
     padding-block: 4%;
+    grid-column: 2 / 3;
 }
 
 form {
@@ -96,4 +112,5 @@ form label span {
     width: 80%;
     margin-inline: auto;
     margin-bottom: 5%;
+    grid-column: 1 / 3; 
 }
