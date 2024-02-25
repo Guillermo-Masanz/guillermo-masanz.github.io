@@ -1,0 +1,79 @@
+/* ! ======== ! */
+/* ! RESETING ! */
+/* ! ======== ! */
+@import 'generic.css';
+
+/* ! ==== ! */
+/* ! BODY ! */
+/* ! ==== ! */
+.cuerpo {
+    background-color: #eff1f3;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 0 40px 0;
+}
+
+/* ! ====== ! */
+/* ! TITULO ! */
+/* ! ====== ! */
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    font-size: 25px;
+}
+
+.titulo h1 {
+    margin: 0;
+}
+
+/* ! ======== ! */
+/* ! TARJETAS ! */
+/* ! ======== ! */
+
+.cards {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    grid-gap: 40px;
+    margin: auto;
+    align-self: center;
+    justify-items: center;
+}
+
+.tarjeta {
+    width: 440px;
+}
+
+.imagen img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.tarjeta:hover {
+    scale: 1.2;
+    transition: scale 300ms ease;
+}
+
+.informacion {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    color: #353535;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.informacion p:first-of-type {
+    text-align: left;
+}
+
+.informacion p:last-of-type {
+    text-align: right;
+}
+
+del {
+    color: #e60012;
+}

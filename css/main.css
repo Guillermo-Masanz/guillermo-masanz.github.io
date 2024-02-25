@@ -3,9 +3,21 @@
 /* ! =============== ! */
 @import url('generic.css');
 
+body::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 /* ! ======== ! */
 /* ! SELECTOR ! */
 /* ! ======== ! */
+
+.cuerpo {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
 
 .consolas {
     position: relative;
@@ -76,6 +88,8 @@
     display: none;
     position: relative;
     height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .active {
