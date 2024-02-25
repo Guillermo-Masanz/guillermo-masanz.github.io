@@ -1,3 +1,12 @@
+/* ! ======== ! */
+/* ! IMPORTES ! */
+/* ! ======== ! */
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+/* ! ======== ! */
+/* ! RESETING ! */
+/* ! ======== ! */
 body {
     margin: 0;
     padding: 0;
@@ -40,10 +49,18 @@ a {
     justify-content: center;
 }
 
+/* ! =========== ! */
+/* ! COLUMNA IZQ ! */
+/* ! =========== ! */
+
 .creators {
     width: fit-content;
     font-size: 20px;
 }
+
+/* ! =========== */
+/* ! COLUMNA DCH */
+/* ! =========== */
 
 .redes__sociales {
     display: flex;
@@ -55,13 +72,17 @@ a {
     color: #f6f6f6;
 }
 
-.contacto a{
+/* ! =============== ! */
+/* ! COLUMNA CENTRAL ! */
+/* ! =============== ! */
+
+.contacto a {
     font-size: 40px;
     color: #f6f6f6;
 }
 
 .contacto::after {
-    content: "";
+    content: '';
     display: block;
     background-color: #f6f6f6;
     width: 60%;

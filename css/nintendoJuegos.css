@@ -43,6 +43,9 @@
     justify-items: center;
 }
 
+/* ! ======== ! */
+/* ! IMAGENES ! */
+/* ! ======== ! */
 .tarjeta {
     width: 440px;
 }
@@ -57,6 +60,9 @@
     transition: scale 300ms ease;
 }
 
+/* ! =========== ! */
+/* ! INFORMACIÓN ! */
+/* ! =========== ! */
 .informacion {
     display: flex;
     justify-content: space-between;

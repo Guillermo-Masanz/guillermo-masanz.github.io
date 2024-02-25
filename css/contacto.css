@@ -1,7 +1,37 @@
-/* ! =============== ! */
-/* ! FUENTES Y RESET ! */
-/* ! =============== ! */
-@import url('generic.css');
+/* ! ======== ! */
+/* ! IMPORTES ! */
+/* ! ======== ! */
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* ! ======== ! */
+/* ! RESETING ! */
+/* ! ======== ! */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Exo", sans-serif;
+}
+
+.cuerpo * {
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: none;
+    border: none;
+}
+
+/* ! ====== ! */
+/* ! CUERPO ! */
+/* ! ====== ! */
 
 .cuerpo {
     display: grid;
