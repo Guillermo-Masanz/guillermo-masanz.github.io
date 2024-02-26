@@ -1,8 +1,7 @@
 /* ! ======== ! */
 /* ! IMPORTES ! */
 /* ! ======== ! */
-@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* ! ======== ! */
 /* ! RESETING ! */
@@ -37,57 +36,96 @@ a {
     bottom: 0%;
     color: #f6f6f6;
     bottom: 0%;
+    padding-block: 10px;
 }
 
 .container {
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
+    width: 80%;
+    margin: auto;
     height: fit-content;
-    gap: 20%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-/* ! =========== ! */
-/* ! COLUMNA IZQ ! */
-/* ! =========== ! */
+/* ! ==== ! */
+/* ! LOGO ! */
+/* ! ==== ! */
+.footer .logo {
+    height: 120px;
+}
+
+.footer .logo img {
+    height: 100%;
+    border-radius: 100%;
+}
+
+/* ! ======== ! */
+/* ! CREATORS ! */
+/* ! ======== ! */
 
 .creators {
     width: fit-content;
+    font-size: 24px;
+}
+
+/* ! ================== ! */
+/* ! ENLACES DE INTERES ! */
+/* ! ================== ! */
+.footer .enlaces {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+}
+
+.footer .enlace {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.footer .enlaces a {
+    color: #f6f6f6;
     font-size: 20px;
 }
 
-/* ! =========== */
-/* ! COLUMNA DCH */
-/* ! =========== */
+.footer .enlaces a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 30%;
+    margin-top: 2px;
+    background-color: #f6f6f6;
+    border-radius: 0 40px 40px 0;
+}
+
+/* ! ============== ! */
+/* ! REDES SOCIALES ! */
+/* ! ============== ! */
 
 .redes__sociales {
     display: flex;
     gap: 40px;
 }
 
+.redes__sociales a:nth-of-type(1):hover {
+    color: #049ff3;
+    transition: color 100ms ease-in;
+}
+
+.redes__sociales a:nth-of-type(2):hover {
+    background: -webkit-linear-gradient(12deg, rgba(249, 206, 52, 1) 0%, rgba(238, 42, 123, 1) 35%, rgba(98, 40, 215, 1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.redes__sociales a:nth-of-type(3):hover {
+    color: #3d5a98;
+    transition: color 100ms ease-in;
+}
+
 .redes__sociales a {
     font-size: 40px;
     color: #f6f6f6;
-}
-
-/* ! =============== ! */
-/* ! COLUMNA CENTRAL ! */
-/* ! =============== ! */
-
-.contacto a {
-    font-size: 40px;
-    color: #f6f6f6;
-}
-
-.contacto::after {
-    content: '';
-    display: block;
-    background-color: #f6f6f6;
-    width: 60%;
-    height: 3px;
-    top: 0%;
-    margin: 0 14px;
-    border-radius: 40px;
 }
