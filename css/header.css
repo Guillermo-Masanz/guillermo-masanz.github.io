@@ -73,27 +73,28 @@ a {
 /* ! ================== ! */
 /* ! Animaciones navbar ! */
 /* ! ================== ! */
+@media (width >= 1024px) {
+    .desplegable:hover .desplegable__button {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease-in-out;
+    }
 
-.desplegable:hover .desplegable__button {
-    transform: rotate(180deg);
-    transition: transform 0.3s ease-in-out;
-}
+    .lista *:hover {
+        cursor: pointer;
+    }
 
-.lista *:hover {
-    cursor: pointer;
-}
+    .lista .enlace::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #353535;
+        transition: width 300ms;
+    }
 
-.lista .enlace::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #353535;
-    transition: width 300ms;
-}
-
-.enlace:hover::after {
-    width: 100%;
+    .enlace:hover::after {
+        width: 100%;
+    }
 }
 
 /* ! ================ ! */
@@ -144,9 +145,11 @@ a {
     color: #dd2020;
 }
 
-.desplegable:hover .dropdown_content {
-    display: block;
-    z-index: 2;
+@media (width >= 1024px) {
+    .desplegable:hover .dropdown_content {
+        display: block;
+        z-index: 2;
+    }
 }
 
 /* ! ============= ! */
@@ -178,7 +181,7 @@ a {
         position: absolute;
         margin: 0 auto;
     }
-    
+
     .logo__container {
         display: flex;
         width: 84%;
@@ -244,6 +247,11 @@ a {
         width: 74%;
         padding: 0;
         margin: auto;
+    }
+
+    .submenu .desplegable__button {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease-in-out;
     }
 
     .dropdown_content a {
