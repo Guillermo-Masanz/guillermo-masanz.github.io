@@ -49,7 +49,7 @@ a {
     margin: auto;
     height: fit-content;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 /* ! ==== ! */
@@ -109,28 +109,32 @@ a {
 
 .footer__container .redes__sociales {
     display: flex;
-    gap: 40px;
+    column-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
 }
 
-.footer__container .redes__sociales a:nth-of-type(1):hover {
+.footer__container .redes__sociales i {
+    font-size: 40px;
+    color: #f6f6f6;
+    box-sizing: border-box;
+}
+
+.footer__container .redes__sociales a:nth-of-type(1):hover i {
     color: #049ff3;
     transition: color 100ms ease-in;
 }
 
-.footer__container .redes__sociales a:nth-of-type(2):hover {
+.footer__container .redes__sociales a:nth-of-type(2):hover i {
     background: -webkit-linear-gradient(12deg, rgba(249, 206, 52, 1) 0%, rgba(238, 42, 123, 1) 35%, rgba(98, 40, 215, 1) 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.footer__container .redes__sociales a:nth-of-type(3):hover {
+.footer__container .redes__sociales a:nth-of-type(3):hover i {
     color: #3d5a98;
     transition: color 100ms ease-in;
-}
-
-.footer__container .redes__sociales a {
-    font-size: 40px;
-    color: #f6f6f6;
 }
 
 /* ! ============= ! */
@@ -138,14 +142,43 @@ a {
 /* ! ============= ! */
 @media (768px <= width <= 1024px) {
     .footer {
-        height: 100px;
+        height: 80px;
+        padding-block: 0.6em;
     }
-    
+
+    .footer__container {
+        width: 90%;
+    }
+
     .footer__container .logo {
         height: 80px;
     }
-    
+
     .footer__container * {
-        font-size: 10px;
+        font-size: 14px;
     }
+
+    .footer__container .enlaces {
+        gap: 16px;
+    }
+
+    .footer__container .enlace {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .footer__container .enlaces a {
+        font-size: 14px;
+    }
+
+    .footer__container .redes__sociales i {
+        font-size: 20px;
+    }
+}
+
+/* ! ============ ! */
+/* ! TAMAÑO MÓVIL ! */
+/* ! ============ ! */
+@media (360px <= width <= 400px) {
+    
 }

@@ -41,3 +41,4 @@ function cambiarVideo(newActive) {
         newVideo.play();
     };
 }
+
