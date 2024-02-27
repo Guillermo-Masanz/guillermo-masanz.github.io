@@ -6,18 +6,21 @@
 /* ! ======== ! */
 /* ! RESETING ! */
 /* ! ======== ! */
+* {
+    font-family: 'Exo', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
-.footer {
+.footer__container {
     z-index: 10;
 }
 
-.footer a {
+.footer__container a {
     box-sizing: border-box;
-    font-family: 'Exo', sans-serif;
 }
 
 a {
@@ -32,14 +35,14 @@ a {
     display: block;
     background-color: #323232;
     width: 100%;
-    height: fit-content;
+    height: 140px;
     bottom: 0%;
     color: #f6f6f6;
     bottom: 0%;
     padding-block: 10px;
 }
 
-.container {
+.footer__container {
     display: flex;
     flex-flow: row wrap;
     width: 80%;
@@ -52,11 +55,11 @@ a {
 /* ! ==== ! */
 /* ! LOGO ! */
 /* ! ==== ! */
-.footer .logo {
+.footer__container .logo {
     height: 120px;
 }
 
-.footer .logo img {
+.footer__container .logo img {
     height: 100%;
     border-radius: 100%;
 }
@@ -65,7 +68,7 @@ a {
 /* ! CREATORS ! */
 /* ! ======== ! */
 
-.creators {
+.footer__container .creators {
     width: fit-content;
     font-size: 24px;
 }
@@ -73,24 +76,24 @@ a {
 /* ! ================== ! */
 /* ! ENLACES DE INTERES ! */
 /* ! ================== ! */
-.footer .enlaces {
+.footer__container .enlaces {
     display: flex;
     flex-direction: row;
     column-gap: 40px;
 }
 
-.footer .enlace {
+.footer__container .enlace {
     display: flex;
     flex-direction: column;
     row-gap: 12px;
 }
 
-.footer .enlaces a {
+.footer__container .enlaces a {
     color: #f6f6f6;
     font-size: 20px;
 }
 
-.footer .enlaces a::after {
+.footer__container .enlaces a::after {
     content: '';
     display: block;
     height: 2px;
@@ -104,28 +107,45 @@ a {
 /* ! REDES SOCIALES ! */
 /* ! ============== ! */
 
-.redes__sociales {
+.footer__container .redes__sociales {
     display: flex;
     gap: 40px;
 }
 
-.redes__sociales a:nth-of-type(1):hover {
+.footer__container .redes__sociales a:nth-of-type(1):hover {
     color: #049ff3;
     transition: color 100ms ease-in;
 }
 
-.redes__sociales a:nth-of-type(2):hover {
+.footer__container .redes__sociales a:nth-of-type(2):hover {
     background: -webkit-linear-gradient(12deg, rgba(249, 206, 52, 1) 0%, rgba(238, 42, 123, 1) 35%, rgba(98, 40, 215, 1) 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.redes__sociales a:nth-of-type(3):hover {
+.footer__container .redes__sociales a:nth-of-type(3):hover {
     color: #3d5a98;
     transition: color 100ms ease-in;
 }
 
-.redes__sociales a {
+.footer__container .redes__sociales a {
     font-size: 40px;
     color: #f6f6f6;
+}
+
+/* ! ============= ! */
+/* ! TAMAÑO TABLET ! */
+/* ! ============= ! */
+@media (768px <= width <= 1024px) {
+    .footer {
+        height: 100px;
+    }
+    
+    .footer__container .logo {
+        height: 80px;
+    }
+    
+    .footer__container * {
+        font-size: 10px;
+    }
 }

@@ -35,13 +35,14 @@ a {
     display: block;
     position: sticky;
     top: 0%;
+    height: 100px;
 }
 
 .menu {
     display: flex;
     flex-flow: row wrap;
     gap: 60px;
-    height: 100px;
+    height: 100%;
     align-items: center;
     justify-content: center;
 }
