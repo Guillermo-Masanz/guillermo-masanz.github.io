@@ -1,24 +1,23 @@
-window.onload = function () {
+window.onload = function() { 
     if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
-        var desplegable = document.querySelectorAll('.fa-chevron-down');
+        var dropddownContent__button = document.querySelectorAll('.fa-chevron-down');
 
-        desplegable.forEach(function (content) {
+        dropddownContent__button.forEach(function (content) {
             content.addEventListener('click', function () {
-                // Parent container del propio elemento
-                var padre = this.parentElement.querySelector('.dropdown_content');
-
-                // Conseguir los elementos para 'calcular' los opuestos
+                // Parent container of the clicked element
+                var dropdown__content = this.parentElement.nextElementSibling;
+                
+                // Get all dropdown elements
                 var opuesto = document.querySelectorAll('.dropdown_content');
-
-                // Por cada elemento comprobamos que no coincida con el opuesto y que esté abierto
+                
+                // Close all dropdowns
                 opuesto.forEach((dropdown) => {
-                    if (dropdown !== padre && dropdown.style.display === 'block') {
-                        // Close the opposite dropdown instantly
-                        padre.classList.remove('submenu_tablet');
-                    } else {
-                        dropdown.classList.add('submenu_tablet');
+                    if (dropdown !== dropdown__content) {
+                        dropdown.classList.remove('submenu_tablet');
                     }
                 });
+                
+                dropdown__content.classList.toggle('submenu_tablet')
             });
         });
     } else if (window.innerWidth >= 360 && window.innerWidth <= 400) {
