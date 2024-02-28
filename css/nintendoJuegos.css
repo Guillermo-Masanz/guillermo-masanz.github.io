@@ -83,3 +83,29 @@
 del {
     color: #e60012;
 }
+
+/* ! ============ ! */
+/* ! TAMAÑO MÓVIL ! */
+/* ! ============ ! */
+@media (360px <= width <= 400px) {
+    .titulo {
+        font-size: 20px;
+    }
+
+    .tarjeta {
+        width: 340px;
+    }
+
+    .cards {
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    }
+
+    .informacion {
+        font-size: 15px;
+    }
+
+    .tarjeta:hover {
+        scale: 1;
+    }
+} 

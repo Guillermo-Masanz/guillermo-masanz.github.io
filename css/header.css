@@ -73,7 +73,7 @@ a {
 /* ! ================== ! */
 /* ! Animaciones navbar ! */
 /* ! ================== ! */
-@media (width >= 1024px) {
+@media (width > 1024px) {
     .desplegable:hover .desplegable__button {
         transform: rotate(180deg);
         transition: transform 0.3s ease-in-out;
@@ -145,7 +145,7 @@ a {
     color: #dd2020;
 }
 
-@media (width >= 1024px) {
+@media (width > 1024px) {
     .desplegable:hover .dropdown_content {
         display: block;
         z-index: 2;
@@ -167,6 +167,10 @@ a {
     .lista * {
         font-size: 1em;
         padding: 4px;
+    }
+
+    .submenu_tablet {
+        display: block;
     }
 }
 
@@ -211,10 +215,11 @@ a {
     .mostrar > * {
         width: 80%;
         margin: auto;
+        padding-block: 20px;
     }
 
     .desplegable {
-        display: inline;
+        display: block;
     }
 
     .desplegable__enlace {
@@ -222,14 +227,8 @@ a {
         justify-content: space-between;
         align-items: center;
         width: 80%;
-    }
-
-    .desplegable__enlace {
         padding: 0;
-        margin: auto;
-        margin-bottom: 12px;
     }
-
     .bi-xbox,
     .bi-nintendo-switch {
         display: none;
@@ -239,14 +238,13 @@ a {
         display: none;
     }
 
-    .submenu {
+    .submenu_movil {
         display: block;
         position: inherit;
         box-shadow: none;
         background-color: none;
-        width: 74%;
         padding: 0;
-        margin: auto;
+        margin: 12px 0 0 20px;
     }
 
     .submenu .desplegable__button {
@@ -257,5 +255,10 @@ a {
     .dropdown_content a {
         margin: 0;
         padding: 14px 0;
+        background-color: none;
+    }
+
+    .dropdown_content a:hover {
+        background-color: none;
     }
 }

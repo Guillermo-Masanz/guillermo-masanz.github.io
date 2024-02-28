@@ -180,5 +180,14 @@ a {
 /* ! TAMAÑO MÓVIL ! */
 /* ! ============ ! */
 @media (360px <= width <= 400px) {
-    
+    .footer {
+        height: 100%;
+        padding-block: 12px;
+    }
+
+    .footer__container {
+        width: 90%;
+        justify-content: space-evenly;
+        row-gap: 30px;
+    }
 }
