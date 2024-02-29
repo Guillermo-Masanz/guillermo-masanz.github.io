@@ -32,7 +32,6 @@ $(function () {
         // Evento click en boton del menu movil
         hamburguesa.addEventListener('click', () => {
             lista.classList.toggle('mostrar');
-            console.log('hghaohahoamh')
         });
 
         // Flechas desplegables
