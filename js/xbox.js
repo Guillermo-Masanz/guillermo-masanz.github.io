@@ -1,4 +1,4 @@
-window.onload = carousel();
+$( document ).ready(carousel());
 
 function carousel() {
     let slider = document.querySelector(".slider");

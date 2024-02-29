@@ -1,4 +1,4 @@
-window.onload = function() { 
+$( document ).ready( function() { 
     if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
         var dropddownContent__button = document.querySelectorAll('.fa-chevron-down');
 
@@ -40,4 +40,4 @@ window.onload = function() {
             });
         });
     }
-};
+});
