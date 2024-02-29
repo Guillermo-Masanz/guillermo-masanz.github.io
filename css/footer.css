@@ -30,7 +30,6 @@ a {
 /* ! ====== ! */
 /* ! FOOTER ! */
 /* ! ====== ! */
-
 .footer {
     display: block;
     background-color: #323232;
@@ -67,7 +66,6 @@ a {
 /* ! ======== ! */
 /* ! CREATORS ! */
 /* ! ======== ! */
-
 .footer__container .creators {
     width: fit-content;
     font-size: 24px;
@@ -106,7 +104,6 @@ a {
 /* ! ============== ! */
 /* ! REDES SOCIALES ! */
 /* ! ============== ! */
-
 .footer__container .redes__sociales {
     display: flex;
     column-gap: 40px;
@@ -141,6 +138,10 @@ a {
 /* ! TAMAÑO TABLET ! */
 /* ! ============= ! */
 @media (768px <= width <= 1024px) {
+
+    /* ! ====== ! */
+    /* ! FOOTER ! */
+    /* ! ====== ! */
     .footer {
         height: 80px;
         padding-block: 0.6em;
@@ -150,14 +151,20 @@ a {
         width: 90%;
     }
 
-    .footer__container .logo {
-        height: 80px;
-    }
-
     .footer__container * {
         font-size: 14px;
     }
 
+    /* ! ==== ! */
+    /* ! LOGO ! */
+    /* ! ==== ! */
+    .footer__container .logo {
+        height: 80px;
+    }
+
+    /* ! ================== ! */
+    /* ! ENLACES DE INTERES ! */
+    /* ! ================== ! */
     .footer__container .enlaces {
         gap: 16px;
     }
@@ -171,6 +178,9 @@ a {
         font-size: 14px;
     }
 
+    /* ! ============== ! */
+    /* ! REDES SOCIALES ! */
+    /* ! ============== ! */
     .footer__container .redes__sociales i {
         font-size: 20px;
     }
@@ -180,6 +190,10 @@ a {
 /* ! TAMAÑO MÓVIL ! */
 /* ! ============ ! */
 @media (360px <= width <= 400px) {
+
+    /* ! ====== ! */
+    /* ! FOOTER ! */
+    /* ! ====== ! */
     .footer {
         height: 100%;
         padding-block: 12px;

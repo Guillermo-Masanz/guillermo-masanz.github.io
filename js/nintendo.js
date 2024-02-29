@@ -6,7 +6,7 @@ $(function() {
         // Accion ID
         var accion = document.getElementById('accion');
         
-        // Aventruas ID
+        // Aventuras ID
         var aventura = document.getElementById('aventura');
         
         // Deporte ID

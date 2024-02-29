@@ -1,22 +1,24 @@
 $(function () {
     if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
+        // Flechas
         var dropddownContent__button = document.querySelectorAll('.fa-chevron-down');
 
         dropddownContent__button.forEach(function (content) {
             content.addEventListener('click', function () {
-                // Parent container of the clicked element
+                // Contenedor hermano de la flecha
                 var dropdown__content = this.parentElement.nextElementSibling;
 
-                // Get all dropdown elements
+                // Simular el opuesto seleccionando todos
                 var opuesto = document.querySelectorAll('.dropdown_content');
 
-                // Close all dropdowns
+                // Si no coincide el último que se ha accionado, se cierra el opuesto
                 opuesto.forEach((dropdown) => {
                     if (dropdown !== dropdown__content) {
                         dropdown.classList.remove('submenu_tablet');
                     }
                 });
 
+                // Abrir/Cerrar submenu
                 dropdown__content.classList.toggle('submenu_tablet');
             });
         });
@@ -27,12 +29,15 @@ $(function () {
         // Navbar oculto móvil
         var lista = document.querySelector('.lista');
 
+        // Evento click en boton del menu movil
         hamburguesa.addEventListener('click', () => {
             lista.classList.toggle('mostrar');
         });
 
+        // Flechas desplegables
         var flechas = document.querySelectorAll('.fa-chevron-down');
 
+        // Submenus
         flechas.forEach(function (chevron) {
             chevron.addEventListener('click', function () {
                 var dropdownContent = this.parentNode.nextElementSibling;

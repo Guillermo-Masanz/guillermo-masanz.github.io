@@ -207,8 +207,7 @@ form label span {
 
 @media (360px <= width <= 400px) {
     .cuerpo {
-        display: flex;
-        flex-flow: row wrap;
+        display: grid;
     }
 
     .formulario {

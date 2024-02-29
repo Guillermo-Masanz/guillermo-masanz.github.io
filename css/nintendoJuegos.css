@@ -16,7 +16,6 @@
 /* ! ====== ! */
 /* ! TITULO ! */
 /* ! ====== ! */
-
 .titulo {
     display: flex;
     justify-content: center;
@@ -32,7 +31,6 @@
 /* ! ======== ! */
 /* ! TARJETAS ! */
 /* ! ======== ! */
-
 .cards {
     width: 90%;
     display: grid;
@@ -43,21 +41,21 @@
     justify-items: center;
 }
 
-/* ! ======== ! */
-/* ! IMAGENES ! */
-/* ! ======== ! */
 .tarjeta {
     width: 440px;
-}
-
-.imagen img {
-    width: 100%;
-    border-radius: 12px;
 }
 
 .tarjeta:hover {
     scale: 1.2;
     transition: scale 300ms ease;
+}
+
+/* ! ======== ! */
+/* ! IMAGENES ! */
+/* ! ======== ! */
+.imagen img {
+    width: 100%;
+    border-radius: 12px;
 }
 
 /* ! =========== ! */
@@ -88,24 +86,35 @@ del {
 /* ! TAMAÑO MÓVIL ! */
 /* ! ============ ! */
 @media (360px <= width <= 400px) {
+
+    /* ! ====== ! */
+    /* ! TITULO ! */
+    /* ! ====== ! */
     .titulo {
         font-size: 20px;
+    }
+
+    /* ! ======== ! */
+    /* ! TARJETAS ! */
+    /* ! ======== ! */
+    .cards {
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     }
 
     .tarjeta {
         width: 340px;
     }
 
-    .cards {
-        justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    .tarjeta:hover {
+        scale: 1;
     }
 
+    /* ! =========== ! */
+    /* ! INFORMACIÓN ! */
+    /* ! =========== ! */
     .informacion {
         font-size: 15px;
     }
 
-    .tarjeta:hover {
-        scale: 1;
-    }
 } 

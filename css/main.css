@@ -3,16 +3,18 @@
 /* ! =============== ! */
 @import url('generic.css');
 
+/* ! ================ ! */
+/* ! REMOVE SCROLLBAR ! */
+/* ! ================ ! */
 body::-webkit-scrollbar {
     display: none;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-/* ! ======== ! */
-/* ! SELECTOR ! */
-/* ! ======== ! */
-
+/* ! ====== ! */
+/* ! CUERPO ! */
+/* ! ====== ! */
 .cuerpo {
     height: fit-content;
     /* min-height: 100vh; */
@@ -20,6 +22,9 @@ body::-webkit-scrollbar {
     padding: 0;
 }
 
+/* ! ======== ! */
+/* ! CONSOLAS ! */
+/* ! ======== ! */
 .consolas {
     position: relative;
     width: 100%;
@@ -31,6 +36,10 @@ body::-webkit-scrollbar {
 .consolas * {
     margin: auto;
 }
+
+/* ! ================= ! */
+/* ! SELECTOR CONSOLAS ! */
+/* ! ================= ! */
 
 .selector_consolas {
     margin: 40px;
@@ -83,7 +92,6 @@ body::-webkit-scrollbar {
 /* ! ====== ! */
 /* ! VIDEOS ! */
 /* ! ====== ! */
-
 .consola {
     opacity: 0;
     display: none;
@@ -109,11 +117,6 @@ body::-webkit-scrollbar {
 /* ! ==== ! */
 /* ! IR A ! */
 /* ! ==== ! */
-
-/* .goto {
-    position: absolute;
-} */
-
 .goto {
     position: absolute;
     bottom: 20%;

@@ -54,6 +54,9 @@ a {
     opacity: 30%;
 }
 
+/* ! ======== ! */
+/* ! CONSOLAS ! */
+/* ! ======== ! */
 .consolas {
     position: absolute;
     display: flex;
@@ -97,9 +100,10 @@ a {
 /* ! ========= ! */
 .slider_container {
     width: 80%;
-    overflow: hidden;
-    margin: 12px auto;
     position: relative;
+    margin: 12px auto;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .slider {
@@ -133,7 +137,6 @@ a {
 /* ! ======== ! */
 /* ! TARJETAS ! */
 /* ! ======== ! */
-
 h1 {
     font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
     text-align: center;
@@ -173,32 +176,9 @@ h1 {
     transform: translateY(-20px);
 }
 
-@media (768px <= width <= 1024px) {
-    .galeria {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 6%;
-        margin-inline: 4%;
-    }
-}
-
-@media (360px <= width <= 400px) {
-    .galeria {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 4%;
-        margin-inline: 15%;
-    }
-
-    .categoria h3 {
-        margin-bottom: 15px;
-    }
-}
-
 /* ! ========== ! */
 /* ! Accesorios ! */
 /* ! ========== ! */
-
 h1:nth-child(5) {
     margin-block: 0px;
     padding-bottom: 5%;
@@ -310,6 +290,14 @@ h1:nth-child(5) {
 
     .accesorio .back {
         font-size: 2vw;
+    }
+
+    .slider_container {
+        width: 90%;
+    }
+
+    .slider_container > i{
+        display: none;
     }
 }
 

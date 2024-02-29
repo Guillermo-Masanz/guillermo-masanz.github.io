@@ -28,7 +28,6 @@ a {
 /* ! ====== ! */
 /* ! HEADER ! */
 /* ! ====== ! */
-
 .header {
     height: 6.25em;
     background-color: #e8ebf7;
@@ -66,6 +65,9 @@ a {
     padding: 4px;
 }
 
+/* ! ================ ! */
+/* ! MENU MÓVIL CLASS ! */
+/* ! ================ ! */
 .menu__movil {
     display: none;
 }
@@ -73,33 +75,35 @@ a {
 /* ! ================== ! */
 /* ! Animaciones navbar ! */
 /* ! ================== ! */
-@media (width > 1024px) {
-    .desplegable:hover .desplegable__button {
-        transform: rotate(180deg);
-        transition: transform 0.3s ease-in-out;
-    }
+.desplegable:hover .fa-chevron-down {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+}
 
-    .lista *:hover {
-        cursor: pointer;
-    }
+.lista *:hover {
+    cursor: pointer;
+}
 
-    .lista .enlace::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 2px;
-        background: #353535;
-        transition: width 300ms;
-    }
+.lista .enlace::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #353535;
+    transition: width 300ms;
+}
 
-    .enlace:hover::after {
-        width: 100%;
-    }
+.enlace:hover::after {
+    width: 100%;
 }
 
 /* ! ================ ! */
-/* ! Menú desplegable ! */
+/* ! MENÚ DESPLEGABLE ! */
 /* ! ================ ! */
+.desplegable {
+    display: flex;
+}
+
 .desplegable:nth-of-type(2) .desplegable__enlace:hover * {
     color: #2ca243;
     transition: color 0.2 ease-in-out;
@@ -110,12 +114,9 @@ a {
     transition: color 0.2 ease-in-out;
 }
 
-.desplegable {
-    display: flex;
-}
-
-/* ********** CONTENIDO ********** */
-
+/* ! ================ ! */
+/* ! DROPDOWN CONTENT ! */
+/* ! ================ ! */
 .dropdown_content {
     display: none;
     position: absolute;
@@ -145,6 +146,9 @@ a {
     color: #dd2020;
 }
 
+/* ! ========================================== ! */
+/* ! MENU DESPLEGABLE ON HOVER PARA ORDENADORES ! */
+/* ! ========================================== ! */
 @media (width > 1024px) {
     .desplegable:hover .dropdown_content {
         display: block;
@@ -156,10 +160,16 @@ a {
 /* ! TAMAÑO TABLET ! */
 /* ! ============= ! */
 @media (768px <= width <= 1024px) {
+    /* ! ============= ! */
+    /* ! TAMAÑO IMAGEN ! */
+    /* ! ============= ! */
     .menu img {
         height: 4rem;
     }
 
+    /* ! ===== ! */
+    /* ! LISTA ! */
+    /* ! ===== ! */
     .lista {
         gap: 10px;
     }
@@ -169,6 +179,9 @@ a {
         padding: 4px;
     }
 
+    /* ! =============== ! */
+    /* ! DROPDOWN TABLET ! */
+    /* ! =============== ! */
     .submenu_tablet {
         display: block;
     }
@@ -178,6 +191,9 @@ a {
 /* ! TAMAÑO MÓVIL ! */
 /* ! ============ ! */
 @media (360px <= width <= 400px) {
+    /* ! ==== ! */
+    /* ! MENU ! */
+    /* ! ==== ! */
     .menu {
         display: block;
         width: 100%;
@@ -186,6 +202,13 @@ a {
         margin: 0 auto;
     }
 
+    .lista {
+        display: none;
+    }
+
+    /* ! ==== ! */
+    /* ! LOGO ! */
+    /* ! ==== ! */
     .logo__container {
         display: flex;
         width: 84%;
@@ -195,16 +218,18 @@ a {
         align-items: center;
     }
 
+    /* ! =============== ! */
+    /* ! HAMBURGUER MENU ! */
+    /* ! =============== ! */
     .menu__movil {
         display: block;
         font-size: 40px;
         color: #353535;
     }
 
-    .lista {
-        display: none;
-    }
-
+    /* ! ========================== ! */
+    /* ! CLASE PARA MOSTRAR EL MENU ! */
+    /* ! ========================== ! */
     .mostrar {
         display: block;
         background-color: #e8ebf7;
@@ -218,6 +243,9 @@ a {
         padding-block: 20px;
     }
 
+    /* ! ======================== ! */
+    /* ! ENLACES CON DESPLEGABLES ! */
+    /* ! ======================== ! */
     .desplegable {
         display: block;
     }
@@ -229,6 +257,7 @@ a {
         width: 80%;
         padding: 0;
     }
+
     .bi-xbox,
     .bi-nintendo-switch {
         display: none;
@@ -238,6 +267,9 @@ a {
         display: none;
     }
 
+    /* ! ============== ! */
+    /* ! DROPDOWN MÓVIL ! */
+    /* ! ============== ! */
     .submenu_movil {
         display: block;
         position: inherit;
@@ -245,11 +277,6 @@ a {
         background-color: none;
         padding: 0;
         margin: 12px 0 0 20px;
-    }
-
-    .submenu .desplegable__button {
-        transform: rotate(180deg);
-        transition: transform 0.3s ease-in-out;
     }
 
     .dropdown_content a {
@@ -260,5 +287,16 @@ a {
 
     .dropdown_content a:hover {
         background-color: none;
+    }
+
+    /* ! =========================== ! */
+    /* ! QUITAR ESTILOS PREDEFINIDOS ! */
+    /* ! =========================== ! */
+    .desplegable:hover .fa-chevron-down {
+        transform: rotate(0deg);
+    }
+
+    .lista .enlace::after {
+        display: none;
     }
 }
