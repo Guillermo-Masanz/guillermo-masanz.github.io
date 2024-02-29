@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+$(function() {
     if (window.innerWidth > 1024) {
         // Bloque ID
         var bloque = document.querySelectorAll('.bloque');
