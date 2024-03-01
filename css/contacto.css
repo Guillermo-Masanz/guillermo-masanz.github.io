@@ -173,7 +173,7 @@ form label span {
 
     .cuerpo {
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
     }
 
     .formulario {
@@ -217,7 +217,8 @@ form label span {
 /* ! ====================================== ! */
 @media (360px <= width <= 400px) {
     .cuerpo {
-        display: grid;
+        display: flex;
+        flex-flow: row wrap;
     }
 
     .formulario {
