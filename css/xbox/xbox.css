@@ -349,7 +349,7 @@ h1:nth-child(5) {
         font-size: 2.9vw;
     }
 
-    .botones {
+    .slider_container .botones {
         display: none;
     }
 
