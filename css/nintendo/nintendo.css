@@ -1,7 +1,8 @@
 /* ! =============== !  */
 /* ! FUENTES Y RESET !  */
 /* ! =============== !  */
-@import url('generic.css');
+@import url('/css/reseting.css');
+@import url('/css/generic.css');
 
 /* ! ================ ! */
 /* ! REMOVE SCROLLBAR ! */
@@ -16,29 +17,28 @@ body::-webkit-scrollbar {
 /* ! CUERPO ! */
 /* ! ====== ! */
 .cuerpo {
-    height: fit-content;
-    margin-bottom: -12px;
-    position: relative;
-}
-
-.cuerpo > img:first-of-type {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    background-image: url('/images/images_nintendo/main/Mario_Bros_Background_V2.webp');
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ! ================== ! */
 /* ! TARJETAS CONTAINER ! */
 /* ! ================== ! */
 .bloques_container {
-    position: absolute;
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 0;
-    bottom:  40%;
-    left: 50%;
-    transform: translateX(-50%);
-    align-items: end;
+    position: relative;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    width: 100%;
+    gap: 40px;
+    margin: 0 auto;
 }
 
 .bloques_container img {
@@ -55,14 +55,15 @@ body::-webkit-scrollbar {
     flex-flow: column;
     align-items: center;
     gap: 4vh;
-    width: 300px;
+    width: 400px;
+    margin: auto;
 }
 
 /* ! ======== ! */
 /* ! TARJETAS ! */
 /* ! ======== ! */
 .card {
-    width: 300px;
+    width: 340px;
     height: 250px;
     position: relative;
     border-radius: 12px;
@@ -75,13 +76,13 @@ body::-webkit-scrollbar {
 
 .fa-caret-down {
     position: absolute;
-    color: #fafafa;
+    color: var(--blanco-sucio);
     left: 50%;
     transform: translateX(-50%);
     font-size: 35px;
     bottom: -2.2vh;
     z-index: -1;
-    color: #161616;
+    color: var(--font-color-black);
 }
 
 /* ! ================ ! */
@@ -96,7 +97,7 @@ body::-webkit-scrollbar {
     width: 100%;
     border-radius: 12px;
     z-index: 4;
-    border: 2px solid #161616;
+    border: 2px solid var(--font-color-black);
 }
 
 /* ! ================ ! */
@@ -113,12 +114,12 @@ body::-webkit-scrollbar {
     bottom: 2vh;
     font-weight: bold;
     color: #fafafa;
-    text-shadow: 1px 2px #161616;
+    text-shadow: 1px 2px var(--font-color-black);
 }
 
 .card .page__link::after {
     content: '';
-    background-color: #fafafa;
+    background-color: var(--blanco-sucio);
     width: 72%;
     height: 2px;
     display: block;
@@ -139,28 +140,27 @@ body::-webkit-scrollbar {
 @keyframes mario {
     0% {
         left: 0;
-        bottom: 16%;
+        bottom: 6%;
     }
     40% {
         left: 40%;
-        bottom: 16%;
+        bottom: 6%;
     }
     48% {
         left: 48%;
-        bottom: 30%;
+        bottom: 20%;
     }
     55% {
         left: 55%;
-        bottom: 16%;
+        bottom: 6%;
     }
     100% {
         left: 96%;
-        bottom: 16%;
+        bottom: 6%;
     }
 }
 
 .mario_bros {
-    bottom: 16%;
     max-height: 6.25rem;
     width: auto;
     position: absolute;
@@ -187,27 +187,39 @@ body::-webkit-scrollbar {
         background-position: center;
         background-size: cover;
         overflow: hidden;
-    }
-
-    .cuerpo > img {
-        display: none;
+        justify-content: center;
+        align-items: center;
     }
 
     /* ! ================ ! */
     /* ! BLOQUES SORPRESA ! */
     /* ! ================ ! */
     .bloques_container {
-        width: 100vw;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        height: 50%;
+    }
+
+    .columna_container {
+        flex-flow: row wrap;
+        margin: auto 0;
+    }
+/*     
+    .bloques_container {
         position: inherit;
         flex-flow: row wrap;
         justify-content: space-evenly;
-        align-items: stretch;
-        margin-block: 40px;
-    }
+        align-items: center;
+        margin-block: 200px;
+        margin: auto;
+    } */
 
     .card {
-        width: 380px;
+        width: 340px;
         height: 250px;
+        display: block;
+        opacity: 1;
     }
 
     .card .fa-caret-down {
@@ -215,15 +227,11 @@ body::-webkit-scrollbar {
     }
 
     .card .page__link {
-        bottom: 5vh;
+        bottom: 6vh;
     }
 
     .bloque {
         display: none;
-    }
-
-    .card {
-        opacity: 1;
     }
 
     /* ! ========== ! */
@@ -263,7 +271,7 @@ body::-webkit-scrollbar {
     /* ! ====== ! */
     .cuerpo {
         width: 100%;
-        min-height: 100vh;
+        height: fit-content;
         background-image: url('/images/images_nintendo/main/Mario_Bros_Background_Movil.webp');
         background-position: bottom;
         background-size: cover;
@@ -279,23 +287,30 @@ body::-webkit-scrollbar {
     .bloques_container {
         width: 90vw;
         position: inherit;
+        display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
         align-items: stretch;
-        padding-block: 40px;
+        padding: 140px;
+        gap: 0;
+    }
+
+    .columna_container {
+        width: 100vw;
     }
 
     .bloque {
         display: none;
     }
-
+    
     /* ! ======== ! */
     /* ! TARJETAS ! */
     /* ! ======== ! */
     .card {
         width: 340px;
-        height: 320px;
+        height: 240px;
         opacity: 1;
+        display: block;
     }
     
     .card .fa-caret-down {

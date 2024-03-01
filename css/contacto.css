@@ -2,6 +2,7 @@
 /* ! IMPORTES ! */
 /* ! ======== ! */
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('/css/generic.css');
 
 /* ! ======== ! */
 /* ! RESETING ! */
@@ -36,7 +37,7 @@ button {
 .cuerpo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: lightgray;
+    background-color: var(--body-bg-color);
 }
 
 /* ! ========== ! */
@@ -44,7 +45,7 @@ button {
 /* ! ========== ! */
 
 .formulario {
-    background-color: lightgray;
+    background-color: var(--body-bg-color);
     padding-block: 4%;
 }
 
@@ -106,7 +107,7 @@ form button {
 }
 
 form button:hover {
-    background-color: green;
+    background-color: var(--main-xbox-color);
     transform: scale(1.1);
 }
 

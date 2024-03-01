@@ -2,6 +2,7 @@
 /* ! IMPORTES ! */
 /* ! ======== ! */
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('/css/generic.css');
 
 /* ! ======== ! */
 /* ! RESETING ! */
@@ -29,7 +30,7 @@ a {
 /* ! ====== ! */
 .header {
     height: 6.25em;
-    background-color: #e8ebf7;
+    background-color: var(--header-bg-color);
     display: block;
     position: sticky;
     top: 0%;
@@ -58,7 +59,7 @@ a {
 
 .lista * {
     position: relative;
-    color: #353535;
+    color: var(--font-color-black);
     font-size: 22px;
     font-weight: bold;
     padding: 4px;
@@ -88,7 +89,7 @@ a {
     display: block;
     width: 0;
     height: 2px;
-    background: #353535;
+    background: var(--font-color-black);
     transition: width 300ms;
 }
 
@@ -104,12 +105,12 @@ a {
 }
 
 .desplegable:nth-of-type(2) .desplegable__enlace:hover * {
-    color: #2ca243;
+    color: var(--main-xbox-color);
     transition: color 0.2 ease-in-out;
 }
 
 .desplegable:nth-of-type(3) .desplegable__enlace:hover * {
-    color: #dd2020;
+    color: var(--main-nintendo-color);
     transition: color 0.2 ease-in-out;
 }
 
@@ -119,7 +120,7 @@ a {
 .dropdown_content {
     display: none;
     position: absolute;
-    background-color: #e8ebf7;
+    background-color: var(--blanco-sucio);
     min-width: 160px;
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5);
     z-index: 3;
@@ -136,12 +137,12 @@ a {
 }
 
 .desplegable:nth-of-type(2) .dropdown_content a:hover {
-    background-color: #f1f1f1;
+    background-color: var(--blanco-sucio);
     color: #2ca243;
 }
 
 .desplegable:nth-of-type(3) .dropdown_content a:hover {
-    background-color: #f1f1f1;
+    background-color: var(--blanco-sucio);
     color: #dd2020;
 }
 
@@ -227,7 +228,7 @@ a {
     .menu__movil {
         display: block;
         font-size: 40px;
-        color: #353535;
+        color: var(--font-color-black);
     }
 
     /* ! ========================== ! */
@@ -235,7 +236,7 @@ a {
     /* ! ========================== ! */
     .mostrar {
         display: block;
-        background-color: #e8ebf7;
+        background-color: var(--header-bg-color);
         margin-top: 0;
         width: 100%;
     }

@@ -1,32 +1,9 @@
-/* ! ======== ! */
-/* ! IMPORTES ! */
-/* ! ======== ! */
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* ! ======== ! */
-/* ! RESETING ! */
-/* ! ======== ! */
-body {
-    margin: 0;
-    padding: 0;
-}
-
-* {
-    font-family: 'Exo', sans-serif;
-}
-
-.cuerpo * {
-    z-index: 1;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-button {
-    background-color: none;
-    border: none;
+:root {
+    --body-bg-color: #eff1f3;
+    --header-bg-color: #d5d9e6;
+    --xbox-juegos-bg: #1a1b1e;
+    --main-xbox-color: #134d13;
+    --main-nintendo-color: #dd2020;
+    --font-color-black: #353535;
+    --blanco-sucio: #f8f8f8;
 }

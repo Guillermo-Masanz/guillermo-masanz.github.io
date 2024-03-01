@@ -1,7 +1,7 @@
-/* ! ============= ! */
-/* ! MEDIA QUERIES ! */
-/* ! ============= ! */
-@import url('Media_Queries/xbox_queries.css');
+/* ! =============== ! */
+/* ! FUENTES Y RESET ! */
+/* ! =============== ! */
+@import url('/css/generic.css');
 
 /* ! ======== ! */
 /* ! RESETING ! */
@@ -42,7 +42,7 @@ a {
     font-size: 5vw;
     font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
     width: 100%;
-    color: #2ca243;
+    color: var(--main-xbox-color);
     -webkit-text-stroke: 1px black;
     z-index: 1;
     text-align: center;
@@ -127,7 +127,7 @@ a {
     top: 50%;
     margin-inline: 30px;
     font-size: 54px;
-    color: #f8f8f8;
+    color: var(--blanco-sucio);
 }
 
 .botones:hover {
@@ -157,11 +157,11 @@ h1 {
 
 .categoria {
     margin: 0;
-    border: 2px solid #2ca243;
+    border: 2px solid var(--main-xbox-color);
     border-radius: 4%;
     overflow: hidden;
     transition: transform 0.3s;
-    background-color: #2ca243;
+    background-color: var(--main-xbox-color);
 }
 
 .categoria img {
@@ -171,7 +171,7 @@ h1 {
 
 .categoria h3 {
     text-align: center;
-    color: black;
+    color: var(--blanco-sucio);
     margin: 0;
     padding: 10px;
 }

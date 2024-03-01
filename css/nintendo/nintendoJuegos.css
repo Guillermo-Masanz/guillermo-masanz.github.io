@@ -1,13 +1,13 @@
 /* ! ======== ! */
 /* ! RESETING ! */
 /* ! ======== ! */
-@import 'generic.css';
+@import url('/css/reseting.css');
 
 /* ! ==== ! */
 /* ! BODY ! */
 /* ! ==== ! */
 .cuerpo {
-    background-color: #eff1f3;
+    background-color: var(--body-bg-color);
     width: 100%;
     min-height: 100vh;
     padding: 20px 0 40px 0;
@@ -65,7 +65,7 @@
     display: flex;
     justify-content: space-between;
     padding: 12px;
-    color: #353535;
+    color: var(--font-color-black);
     font-size: 20px;
     font-weight: 600;
 }
@@ -79,7 +79,7 @@
 }
 
 del {
-    color: #e60012;
+    color: var(--main-nintendo-color);
 }
 
 /* =========================================== */
