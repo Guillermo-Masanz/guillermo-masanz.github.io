@@ -1,0 +1,24 @@
+body {
+    margin-top: 0;
+}
+
+ul:nth-child(1) {
+    margin-block: 0;
+    padding: 2%;
+}
+
+.cuerpo {
+    background-color: lightgray;
+}
+
+.cuerpo a{
+    color: blue;
+}
+
+.cuerpo a:hover {
+    opacity: 0.8;
+}
+
+.cuerpo .a {
+    font-weight: bold;
+}
