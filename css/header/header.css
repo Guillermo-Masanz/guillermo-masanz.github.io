@@ -1,0 +1,305 @@
+/* ! ======== ! */
+/* ! IMPORTES ! */
+/* ! ======== ! */
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ! ======== ! */
+/* ! RESETING ! */
+/* ! ======== ! */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    z-index: 10;
+}
+
+.header a {
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ! ====== ! */
+/* ! HEADER ! */
+/* ! ====== ! */
+.header {
+    height: 6.25em;
+    background-color: #e8ebf7;
+    display: block;
+    position: sticky;
+    top: 0%;
+    height: 100px;
+}
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu img {
+    height: 5rem;
+    border-radius: 100%;
+}
+
+.lista {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.lista * {
+    position: relative;
+    color: #353535;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 4px;
+}
+
+/* ! ================ ! */
+/* ! MENU MÓVIL CLASS ! */
+/* ! ================ ! */
+.menu__movil {
+    display: none;
+}
+
+/* ! ================== ! */
+/* ! Animaciones navbar ! */
+/* ! ================== ! */
+.desplegable:hover .fa-chevron-down {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.lista *:hover {
+    cursor: pointer;
+}
+
+.lista .enlace::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #353535;
+    transition: width 300ms;
+}
+
+.enlace:hover::after {
+    width: 100%;
+}
+
+/* ! ================ ! */
+/* ! MENÚ DESPLEGABLE ! */
+/* ! ================ ! */
+.desplegable {
+    display: flex;
+}
+
+.desplegable:nth-of-type(2) .desplegable__enlace:hover * {
+    color: #2ca243;
+    transition: color 0.2 ease-in-out;
+}
+
+.desplegable:nth-of-type(3) .desplegable__enlace:hover * {
+    color: #dd2020;
+    transition: color 0.2 ease-in-out;
+}
+
+/* ! ================ ! */
+/* ! DROPDOWN CONTENT ! */
+/* ! ================ ! */
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #e8ebf7;
+    min-width: 160px;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    top: 100%;
+    border-radius: 12px;
+}
+
+.dropdown_content a {
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    text-align: justify;
+    border-radius: 12px;
+}
+
+.desplegable:nth-of-type(2) .dropdown_content a:hover {
+    background-color: #f1f1f1;
+    color: #2ca243;
+}
+
+.desplegable:nth-of-type(3) .dropdown_content a:hover {
+    background-color: #f1f1f1;
+    color: #dd2020;
+}
+
+/* ! ========================================== ! */
+/* ! MENU DESPLEGABLE ON HOVER PARA ORDENADORES ! */
+/* ! ========================================== ! */
+@media (width > 1024px) {
+    .desplegable:hover .dropdown_content {
+        display: block;
+        z-index: 2;
+    }
+}
+
+/* =========================================== */
+/* ============== MEDIA QUERIES ============== */
+/* =========================================== */
+
+/* ! ======================================= ! */
+/* ! ============ TAMAÑO TABLET ============ ! */
+/* ! ======================================= ! */
+@media (768px <= width <= 1024px) {
+    /* ! ============= ! */
+    /* ! TAMAÑO IMAGEN ! */
+    /* ! ============= ! */
+    .menu img {
+        height: 4rem;
+    }
+
+    /* ! ===== ! */
+    /* ! LISTA ! */
+    /* ! ===== ! */
+    .lista {
+        gap: 10px;
+    }
+
+    .lista * {
+        font-size: 1em;
+        padding: 4px;
+    }
+
+    /* ! =============== ! */
+    /* ! DROPDOWN TABLET ! */
+    /* ! =============== ! */
+    .submenu_tablet {
+        display: block;
+    }
+}
+
+/* ! ====================================== ! */
+/* ! ============ TAMAÑO MÓVIL ============ ! */
+/* ! ====================================== ! */
+@media (360px <= width <= 400px) {
+    /* ! ==== ! */
+    /* ! MENU ! */
+    /* ! ==== ! */
+    .menu {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin: 0 auto;
+    }
+
+    .lista {
+        display: none;
+    }
+
+    /* ! ==== ! */
+    /* ! LOGO ! */
+    /* ! ==== ! */
+    .logo__container {
+        display: flex;
+        width: 84%;
+        margin: 0 auto;
+        padding-top: 12px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* ! =============== ! */
+    /* ! HAMBURGUER MENU ! */
+    /* ! =============== ! */
+    .menu__movil {
+        display: block;
+        font-size: 40px;
+        color: #353535;
+    }
+
+    /* ! ========================== ! */
+    /* ! CLASE PARA MOSTRAR EL MENU ! */
+    /* ! ========================== ! */
+    .mostrar {
+        display: block;
+        background-color: #e8ebf7;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .mostrar > * {
+        width: 80%;
+        margin: auto;
+        padding-block: 20px;
+    }
+
+    /* ! ======================== ! */
+    /* ! ENLACES CON DESPLEGABLES ! */
+    /* ! ======================== ! */
+    .desplegable {
+        display: block;
+    }
+
+    .desplegable__enlace {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        padding: 0;
+    }
+
+    .bi-xbox,
+    .bi-nintendo-switch {
+        display: none;
+    }
+
+    .dropdown_content {
+        display: none;
+    }
+
+    /* ! ============== ! */
+    /* ! DROPDOWN MÓVIL ! */
+    /* ! ============== ! */
+    .submenu_movil {
+        display: block;
+        position: inherit;
+        box-shadow: none;
+        background-color: none;
+        padding: 0;
+        margin: 12px 0 0 20px;
+    }
+
+    .dropdown_content a {
+        margin: 0;
+        padding: 14px 0;
+        background-color: none;
+    }
+
+    .dropdown_content a:hover {
+        background-color: none;
+    }
+
+    /* ! =========================== ! */
+    /* ! QUITAR ESTILOS PREDEFINIDOS ! */
+    /* ! =========================== ! */
+    .desplegable:hover .fa-chevron-down {
+        transform: rotate(0deg);
+    }
+
+    .lista .enlace::after {
+        display: none;
+    }
+}
