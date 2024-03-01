@@ -385,10 +385,13 @@ h1:nth-child(5) {
 
     .consolas a{
         width: 100%;
+        text-align: center;
     }
 
     .consolas h2{
         display: inline;
+        font-size: larger;
+        margin: auto;
     }
 
     .oscuro {
