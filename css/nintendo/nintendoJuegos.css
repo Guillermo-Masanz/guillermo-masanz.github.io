@@ -90,12 +90,11 @@ del {
 /* ! ============ TAMAÑO MÓVIL ! ============ ! */
 /* ! ======================================== ! */
 @media (360px <= width <= 400px) {
-
     /* ! ====== ! */
     /* ! TITULO ! */
     /* ! ====== ! */
-    .titulo h1{
-        font-size: 18px;
+    .titulo h1 {
+        font-size: 36px;
     }
 
     /* ! ======== ! */
@@ -120,5 +119,4 @@ del {
     .informacion {
         font-size: 15px;
     }
-
 }

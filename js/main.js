@@ -17,7 +17,7 @@ $(function () {
             return true;
         } else {
             cambiarVideo(xbox);
-        };
+        }
     });
 
     // Cambiar el video al de Nintendo si hace click
@@ -26,7 +26,7 @@ $(function () {
             return true;
         } else {
             cambiarVideo(nintendo);
-        };
+        }
     });
 
     function cambiarVideo(newActive) {
@@ -38,7 +38,7 @@ $(function () {
 
         // Agregamos la clase 'active' al nuevo objeto
         newActive.classList.add('active');
-        
+
         // Guardamos el nuevo video en base al parametro de la funcion
         var newVideo = newActive.querySelector('video');
 
@@ -49,12 +49,12 @@ $(function () {
         if (oldVideo) {
             oldVideo.pause();
             oldVideo.currentTime = 0;
-        };
-        
+        }
+
         // Reproducir el nuevo video con el tiempo a 0
         if (newVideo) {
             newVideo.currentTime = 0;
             newVideo.play();
-        };
-    };
+        }
+    }
 });

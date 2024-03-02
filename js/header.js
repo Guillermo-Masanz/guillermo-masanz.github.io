@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
     if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
         // Flechas
         var dropddownContent__button = document.querySelectorAll('.fa-chevron-down');

@@ -13,7 +13,7 @@ body {
 
 * {
     box-sizing: border-box;
-    font-family: "Exo", sans-serif;
+    font-family: 'Exo', sans-serif;
 }
 
 .cuerpo * {
@@ -40,7 +40,7 @@ a {
 .fondo h1 {
     position: absolute;
     font-size: 5vw;
-    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     width: 100%;
     color: var(--main-xbox-color);
     -webkit-text-stroke: 1px black;
@@ -86,7 +86,7 @@ a {
 .consolas h2 {
     text-align: center;
     font-size: 2vw;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 0;
     margin-left: 30%;
 }
@@ -142,7 +142,7 @@ a {
 /* ! TARJETAS ! */
 /* ! ======== ! */
 h1 {
-    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     text-align: center;
     font-size: 4vw;
 }
@@ -303,7 +303,7 @@ h1:nth-child(5) {
         width: 90%;
     }
 
-    .slider_container > i{
+    .slider_container > i {
         display: none;
     }
 }
@@ -370,7 +370,8 @@ h1:nth-child(5) {
         margin: 0;
     }
 
-    .consola1, .consola2 {
+    .consola1,
+    .consola2 {
         margin: 0 auto;
         padding: 0;
         display: flex;
@@ -379,16 +380,16 @@ h1:nth-child(5) {
         width: 100%;
     }
 
-    .consolas img{
+    .consolas img {
         margin: 0 auto;
     }
 
-    .consolas a{
+    .consolas a {
         width: 100%;
         text-align: center;
     }
 
-    .consolas h2{
+    .consolas h2 {
         display: inline;
         font-size: larger;
         margin: auto;
