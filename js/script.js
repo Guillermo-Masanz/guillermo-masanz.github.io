@@ -1,5 +1,5 @@
 const clientId = 'b482b50162c44b21a0a0226f4091fd5b';
-const redirectUri = 'https://yourusername.github.io/your-repo-name/callback.html';
+const redirectUri = 'https://guillermo-masanz.github.io/callback.html';
 const scopes = [
     'playlist-read-private',
     'playlist-modify-private',
